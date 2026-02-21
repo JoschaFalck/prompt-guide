@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 3: Transfer – Aufgaben</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf nav-btn--active" href="aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--auf">
+        <p class="page-header__label">Aufgabenbereich</p>
+        <h1>Aufgabe 3: Transfer</h1>
+        <p class="page-header__subtitle">Eigenen Prompt für eine konkrete Unterrichtssituation schreiben</p>
+      </header>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-bar-container" role="navigation" aria-label="Aufgaben-Fortschritt">
+        <div class="progress-bar-container__label">
+          <span>Aufgabe 3 von 6</span>
+          <span>50 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 50%;"></div>
+        </div>
+        <ol class="progress-steps">
+          <li class="done"><a href="aufgabe-1.html">1</a></li>
+          <li class="done"><a href="aufgabe-2.html">2</a></li>
+          <li class="current"><a href="aufgabe-3.html" aria-current="page">3</a></li>
+          <li><a href="aufgabe-4.html">4</a></li>
+          <li><a href="aufgabe-5.html">5</a></li>
+          <li><a href="aufgabe-6.html">6</a></li>
+        </ol>
+      </div>
+
+      <!-- Aufgaben-Navigation -->
+      <nav class="section-nav section-nav--auf" aria-label="Aufgaben-Navigation">
+        <h3>Aufgaben</h3>
+        <ul class="section-nav__links">
+          <li><a href="aufgabe-1.html">1 – Analyse</a></li>
+          <li><a href="aufgabe-2.html">2 – Rekonstruktion</a></li>
+          <li><a href="aufgabe-3.html" class="active">3 – Transfer</a></li>
+          <li><a href="aufgabe-4.html">4 – Peer-Review</a></li>
+          <li><a href="aufgabe-5.html">5 – Reflexion</a></li>
+          <li><a href="aufgabe-6.html">6 – Entwicklung</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aufgabenbeschreibung -->
+      <div class="content-card content-card--auf">
+
+        <div class="task-header">
+          <div class="task-number">3</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Eigenen Prompt schreiben</h2>
+            <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom:0;">Bloom-Stufe 3 (Anwenden) – Transfer in den eigenen Unterricht</p>
+          </div>
+        </div>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Aufgabe</div>
+          <p>Jetzt bist du dran. Denke an eine <strong>konkrete Situation aus deinem eigenen Unterricht</strong>, für die dir eine KI nützlich sein könnte. Formuliere dafür einen vollständigen Prompt mit allen relevanten Bausteinen.</p>
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Wichtig: Wähle eine echte Situation</div>
+          <p>Nutze eine Situation, die du wirklich bald unterrichten wirst – dann kannst du den Prompt im Anschluss tatsächlich ausprobieren. Das macht den Transfer sofort sichtbar.</p>
+        </div>
+
+      </div>
+
+      <!-- Schritt 1: Situation beschreiben -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 1: Meine Unterrichtssituation</h3>
+        <p>Beschreibe kurz, welche Situation du im Blick hast. Das hilft dir, den Prompt zu fokussieren.</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label class="input-label" for="mein-fach">Mein Fach:</label>
+            <input type="text" id="mein-fach" class="input-area" style="min-height:auto; padding: 0.6rem 0.8rem; resize:none;" placeholder="z. B. Deutsch, Mathematik, Biologie …">
+          </div>
+          <div>
+            <label class="input-label" for="meine-klasse">Meine Klasse:</label>
+            <input type="text" id="meine-klasse" class="input-area" style="min-height:auto; padding: 0.6rem 0.8rem; resize:none;" placeholder="z. B. 7c, Grundschule Klasse 3 …">
+          </div>
+        </div>
+
+        <label class="input-label" for="meine-situation">Was ist die konkrete Situation oder das Thema?</label>
+        <textarea
+          class="input-area"
+          id="meine-situation"
+          placeholder="z. B. Ich brauche differenzierte Aufgaben zum Thema … / Ich möchte einen Elternbrief über … / Ich suche eine Einstiegsaufgabe für …"
+          rows="4"
+        ></textarea>
+
+        <label class="input-label" for="mein-ziel" style="margin-top: 1rem;">Was soll die KI konkret erstellen / tun?</label>
+        <textarea
+          class="input-area"
+          id="mein-ziel"
+          placeholder="z. B. Ein Arbeitsblatt mit Lückentext / Eine Aufgabenreihe in drei Niveaus / Einen Brief …"
+          rows="3"
+        ></textarea>
+
+      </div>
+
+      <!-- Schritt 2: Bausteine sammeln -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 2: Bausteine sammeln</h3>
+        <p>Füllt diese Felder aus – sie werden zu deinem Prompt. Lass Felder leer, die für deine Situation nicht relevant sind.</p>
+
+        <label class="input-label" for="b-rolle">Rolle (optional): Wer soll die KI sein?</label>
+        <textarea
+          class="input-area"
+          id="b-rolle"
+          placeholder="z. B. Du bist erfahrene Mathematiklehrerin an einem Gymnasium …"
+          rows="2"
+        ></textarea>
+
+        <label class="input-label" for="b-aufgabe" style="margin-top: 1rem;">Aufgabe: Was soll die KI tun?</label>
+        <textarea
+          class="input-area"
+          id="b-aufgabe"
+          placeholder="z. B. Erstelle / Schreibe / Entwickle / Erkläre …"
+          rows="2"
+        ></textarea>
+
+        <label class="input-label" for="b-kontext" style="margin-top: 1rem;">Kontext: Was muss die KI über die Situation wissen?</label>
+        <textarea
+          class="input-area"
+          id="b-kontext"
+          placeholder="z. B. Klassenstufe, Schulform, Vorwissen, besondere Bedürfnisse, Zeitrahmen …"
+          rows="3"
+        ></textarea>
+
+        <label class="input-label" for="b-format" style="margin-top: 1rem;">Format: Wie soll die Ausgabe aussehen?</label>
+        <textarea
+          class="input-area"
+          id="b-format"
+          placeholder="z. B. Tabelle mit 3 Spalten, ca. 200 Wörter, nummerierte Liste, Fließtext in drei Absätzen …"
+          rows="2"
+        ></textarea>
+
+        <label class="input-label" for="b-einschr" style="margin-top: 1rem;">Einschränkung (optional): Was soll die KI vermeiden?</label>
+        <textarea
+          class="input-area"
+          id="b-einschr"
+          placeholder="z. B. Keine Fachbegriffe ohne Erklärung, keine Quellenerfindungen, kein Passiv …"
+          rows="2"
+        ></textarea>
+
+      </div>
+
+      <!-- Schritt 3: Fertiger Prompt -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 3: Mein fertiger Prompt</h3>
+        <p>Schreibe jetzt deinen vollständigen Prompt. Du kannst die Bausteine aus Schritt 2 zusammenfügen – aber formuliere ihn als zusammenhängenden Text, nicht als Liste von Feldern.</p>
+
+        <label class="input-label" for="mein-prompt">Mein fertiger Prompt:</label>
+        <textarea
+          class="input-area"
+          id="mein-prompt"
+          placeholder="Schreibe hier deinen vollständigen Prompt …"
+          rows="10"
+          data-maxlength="1000"
+        ></textarea>
+
+        <div class="info-box info-box--green" style="margin-top: 1rem;">
+          <div class="info-box__title">Selbst-Check</div>
+          <p>Bevor du zum nächsten Schritt gehst: Lies deinen Prompt durch die Augen einer KI. Was würde sie verstehen? Was müsste sie raten? Kannst du noch einen Baustein ergänzen?</p>
+        </div>
+
+      </div>
+
+      <!-- Schritt 4: Reflexion -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 4: Kurze Reflexion</h3>
+
+        <label class="input-label" for="selbst-reflexion">Welche Bausteine hast du verwendet? Welcher war am schwierigsten zu formulieren?</label>
+        <textarea
+          class="input-area"
+          id="selbst-reflexion"
+          placeholder="z. B. Ich habe Rolle, Aufgabe und Kontext verwendet. Den Kontext fand ich am schwierigsten, weil …"
+          rows="4"
+        ></textarea>
+
+        <label class="input-label" for="erwartung" style="margin-top: 1rem;">Was erwartest du vom Ergebnis, wenn du diesen Prompt einsetzt?</label>
+        <textarea
+          class="input-area"
+          id="erwartung"
+          placeholder="z. B. Ich erwarte, dass das Ergebnis sofort verwendbar ist / Ich denke, ich muss noch nacharbeiten bei …"
+          rows="3"
+        ></textarea>
+
+      </div>
+
+      <!-- Hinweis Peer-Review -->
+      <div class="info-box info-box--green">
+        <div class="info-box__title">Aufgabe 4 vorbereiten</div>
+        <p>Deinen fertigen Prompt aus Schritt 3 wirst du in Aufgabe 4 einer anderen Person zeigen, die ihn nach festen Kriterien bewertet. Halte ihn daher gut zugänglich (z. B. Bildschirm sichtbar lassen oder Notiz machen).</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="aufgabe-2.html">← Aufgabe 2</a>
+        <a class="btn btn--primary-auf" href="aufgabe-4.html">Weiter: Aufgabe 4 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

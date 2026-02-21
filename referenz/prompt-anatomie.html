@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt-Anatomie – Referenz</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref nav-btn--active" href="was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--ref">
+        <p class="page-header__label">Referenz</p>
+        <h1>Prompt-Anatomie</h1>
+        <p class="page-header__subtitle">Die fünf Bausteine eines wirksamen Prompts</p>
+      </header>
+
+      <nav class="section-nav section-nav--ref" aria-label="Referenz-Navigation">
+        <h3>Referenzbereich</h3>
+        <ul class="section-nav__links">
+          <li><a href="was-ist-ein-prompt.html">Was ist ein Prompt?</a></li>
+          <li><a href="prompt-anatomie.html" class="active">Prompt-Anatomie</a></li>
+          <li><a href="prompt-arten.html">Prompt-Arten</a></li>
+          <li><a href="beispiele.html">Beispielsammlung</a></li>
+          <li><a href="tipps.html">Tipps &amp; Fehler</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-card content-card--ref">
+
+        <h2>Die fünf Bausteine</h2>
+
+        <p>Ein Prompt muss nicht immer alle fünf Bausteine enthalten – aber je mehr relevante Informationen du angibst, desto präziser das Ergebnis. Die Bausteine sind als Gedankenstütze gedacht, nicht als starres Schema.</p>
+
+        <!-- Farblegende -->
+        <div class="anatomy-legend" aria-label="Farblegende">
+          <div class="legend-item"><div class="legend-dot legend-dot--rolle"></div> Rolle</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--aufgabe"></div> Aufgabe</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--kontext"></div> Kontext</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--format"></div> Format</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--einschr"></div> Einschränkung</div>
+        </div>
+
+        <!-- Baustein 1: Rolle -->
+        <h3>1. Rolle – Wer soll die KI sein?</h3>
+
+        <p>Mit einer Rollenangabe gibst du der KI einen Blickwinkel und ein Expertenprofil. Das beeinflusst den Ton, die Terminologie und den Detailgrad der Antwort erheblich.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Formulierungen für die Rolle</div>
+          <ul>
+            <li>„Du bist eine erfahrene Deutschlehrerin an einem Gymnasium …"</li>
+            <li>„Stell dir vor, du bist ein Schüler der 8. Klasse …"</li>
+            <li>„Du bist ein Sachbuchautor, der komplizierte Themen einfach erklärt …"</li>
+            <li>„Du bist eine Schulberaterin mit Fokus auf Inklusion …"</li>
+          </ul>
+        </div>
+
+        <p><strong>Tipp:</strong> Die Rolle ist besonders wertvoll, wenn du unterschiedliche Perspektiven auf ein Thema brauchst – zum Beispiel die einer Schülerin mit Leseschwäche oder die eines Erst-Klässlers.</p>
+
+        <!-- Baustein 2: Aufgabe -->
+        <h3>2. Aufgabe – Was soll die KI tun?</h3>
+
+        <p>Die Aufgabe ist der wichtigste Baustein. Hier beschreibst du, was genau die KI produzieren oder tun soll. Nutze klare Verben.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Starke Verben für Aufgaben</div>
+          <ul>
+            <li><strong>Erstelle</strong> / Schreibe / Formuliere</li>
+            <li><strong>Erkläre</strong> / Beschreibe / Definiere</li>
+            <li><strong>Überarbeite</strong> / Vereinfache / Kürze</li>
+            <li><strong>Entwickle</strong> / Strukturiere / Gliedere</li>
+            <li><strong>Erstelle eine Tabelle / Liste / Übersicht</strong></li>
+            <li><strong>Bewerte</strong> / Vergleiche / Analysiere</li>
+          </ul>
+        </div>
+
+        <!-- Baustein 3: Kontext -->
+        <h3>3. Kontext – Was muss die KI wissen?</h3>
+
+        <p>Der Kontext gibt der KI alle relevanten Rahmenbedingungen: die Zielgruppe, das Vorwissen, die Unterrichtssituation, besondere Anforderungen.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Typische Kontext-Informationen</div>
+          <ul>
+            <li>Klassenstufe und Schulform (z. B. „Klasse 7, Gesamtschule")</li>
+            <li>Vorwissen (z. B. „haben die Bruchrechnung noch nicht")</li>
+            <li>Besonderer Bedarf (z. B. „zwei Schüler mit DaZ-Hintergrund")</li>
+            <li>Vorangegangene Unterrichtseinheiten</li>
+            <li>Zeitrahmen (z. B. „für eine Einzelstunde à 45 Minuten")</li>
+          </ul>
+        </div>
+
+        <!-- Baustein 4: Format -->
+        <h3>4. Format – Wie soll die Ausgabe aussehen?</h3>
+
+        <p>Ohne Formatangabe produziert die KI oft Fließtext, wenn du eigentlich eine Tabelle, eine Liste oder ein Arbeitsblatt brauchst.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Nützliche Formatangaben</div>
+          <ul>
+            <li>Ausgabeform: „als nummerierte Liste", „als Tabelle mit drei Spalten", „als Stichpunkte", „als Fließtext"</li>
+            <li>Länge: „ca. 150 Wörter", „maximal eine halbe Seite", „in drei Absätzen"</li>
+            <li>Sprachebene: „in einfacher Sprache", „auf Niveaustufe B1", „ohne Fachbegriffe"</li>
+            <li>Struktur: „mit Überschriften", „mit einer Einleitung und einem Fazit"</li>
+          </ul>
+        </div>
+
+        <!-- Baustein 5: Einschränkung -->
+        <h3>5. Einschränkung – Was soll die KI vermeiden?</h3>
+
+        <p>Einschränkungen helfen, typische KI-Probleme zu verhindern: zu komplexe Sprache, unerwünschte Inhalte, Erfinden von Quellen, bestimmte Themen.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Sinnvolle Einschränkungen</div>
+          <ul>
+            <li>„Keine Fachbegriffe ohne Erklärung"</li>
+            <li>„Keine Quellen erfinden – wenn du keine kennst, sag es"</li>
+            <li>„Keine Schachtelsätze"</li>
+            <li>„Vermeide Klischees"</li>
+            <li>„Bleib sachlich, keine wertenden Formulierungen"</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Vollständiges Beispiel mit Farbmarkierung -->
+      <div class="content-card content-card--ref">
+
+        <h2>Vollständiges Beispiel: Alle fünf Bausteine</h2>
+
+        <p>Farbig markiert: Welcher Textteil gehört zu welchem Baustein?</p>
+
+        <div class="anatomy-legend">
+          <div class="legend-item"><div class="legend-dot legend-dot--rolle"></div> Rolle</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--aufgabe"></div> Aufgabe</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--kontext"></div> Kontext</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--format"></div> Format</div>
+          <div class="legend-item"><div class="legend-dot legend-dot--einschr"></div> Einschränkung</div>
+        </div>
+
+        <div class="prompt-block">
+          <span class="mark-rolle">Du bist eine erfahrene Biologielehrerin an einem Gymnasium.</span> <span class="mark-aufgabe">Erstelle einen Lückentext zur Fotosynthese.</span> <span class="mark-kontext">Der Text ist für eine 7. Klasse gedacht, die das Thema gerade einführend behandelt. Die Schülerinnen und Schüler kennen den Begriff „Chlorophyll" bereits, aber noch nicht „Calvin-Zyklus".</span> <span class="mark-format">Der Lückentext soll 10–12 Lücken haben, mit einem Lösungskasten am Ende. Formuliere ihn in kurzen, einfachen Sätzen.</span> <span class="mark-einschr">Verwende keine Fachbegriffe, die über das bekannte Vorwissen hinausgehen, ohne sie kurz zu erklären.</span>
+        </div>
+
+        <h3>Weitere Beispiele mit Schulbezug</h3>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Mathematik – Aufgabenentwicklung</div>
+          <span class="mark-rolle">Du bist Mathematiklehrkraft an einer Realschule.</span> <span class="mark-aufgabe">Entwickle fünf differenzierte Textaufgaben zum Thema Prozentrechnung.</span> <span class="mark-kontext">Klasse 7, gemischte Leistungsgruppe. Zwei der Aufgaben sollen einfach sein (ein Rechenschritt), zwei mittelschwer (zwei Schritte) und eine anspruchsvoll (mit Begründung).</span> <span class="mark-format">Nummeriere die Aufgaben, markiere den Schwierigkeitsgrad jeweils mit einem Stern-Symbol (★ / ★★ / ★★★).</span> <span class="mark-einschr">Verwende nur Alltagssituationen, keine künstlichen Rechensituationen.</span>
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Deutsch – Schreibbegleitung</div>
+          <span class="mark-rolle">Du bist ein hilfreicher Schreibcoach.</span> <span class="mark-aufgabe">Gib konstruktives Feedback zu folgendem Schüleraufsatz:</span> <span class="mark-kontext">[Aufsatz hier einfügen]. Die Schülerin ist in Klasse 8, das Thema war ein argumentativer Brief. Bewertungsschwerpunkt ist die Argumentationsstruktur.</span> <span class="mark-format">Nenne zuerst drei Stärken, dann zwei konkrete Verbesserungsvorschläge.</span> <span class="mark-einschr">Kein roter Stift-Stil, keine Noten, kein übermäßiges Lob.</span>
+        </div>
+
+      </div>
+
+      <!-- Kurzreferenz-Tabelle -->
+      <div class="content-card content-card--ref">
+        <h2>Kurzreferenz: Die fünf Bausteine auf einen Blick</h2>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Baustein</th>
+                <th>Leitfrage</th>
+                <th>Beispiel</th>
+                <th>Pflicht?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Rolle</strong></td>
+                <td>Wer soll die KI sein?</td>
+                <td>„Du bist eine Grundschullehrerin …"</td>
+                <td>Empfehlung</td>
+              </tr>
+              <tr>
+                <td><strong>Aufgabe</strong></td>
+                <td>Was soll sie tun?</td>
+                <td>„Erstelle einen Lückentext …"</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td><strong>Kontext</strong></td>
+                <td>Was muss sie wissen?</td>
+                <td>„Klasse 6, kennt Brüche noch nicht …"</td>
+                <td>Sehr empfohlen</td>
+              </tr>
+              <tr>
+                <td><strong>Format</strong></td>
+                <td>Wie soll's aussehen?</td>
+                <td>„Als Tabelle mit 3 Spalten, max. 200 Wörter"</td>
+                <td>Empfehlung</td>
+              </tr>
+              <tr>
+                <td><strong>Einschränkung</strong></td>
+                <td>Was soll sie vermeiden?</td>
+                <td>„Keine Fachbegriffe ohne Erklärung"</td>
+                <td>Bei Bedarf</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="was-ist-ein-prompt.html">← Was ist ein Prompt?</a>
+        <a class="btn btn--primary-ref" href="prompt-arten.html">Weiter: Prompt-Arten →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

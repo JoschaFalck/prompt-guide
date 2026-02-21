@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 5: Reflexion – Aufgaben</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf nav-btn--active" href="aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--auf">
+        <p class="page-header__label">Aufgabenbereich</p>
+        <h1>Aufgabe 5: Reflexion</h1>
+        <p class="page-header__subtitle">Wann ist KI-Einsatz im Unterricht pädagogisch sinnvoll – und wann nicht?</p>
+      </header>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-bar-container" role="navigation" aria-label="Aufgaben-Fortschritt">
+        <div class="progress-bar-container__label">
+          <span>Aufgabe 5 von 6</span>
+          <span>83 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 83%;"></div>
+        </div>
+        <ol class="progress-steps">
+          <li class="done"><a href="aufgabe-1.html">1</a></li>
+          <li class="done"><a href="aufgabe-2.html">2</a></li>
+          <li class="done"><a href="aufgabe-3.html">3</a></li>
+          <li class="done"><a href="aufgabe-4.html">4</a></li>
+          <li class="current"><a href="aufgabe-5.html" aria-current="page">5</a></li>
+          <li><a href="aufgabe-6.html">6</a></li>
+        </ol>
+      </div>
+
+      <!-- Aufgaben-Navigation -->
+      <nav class="section-nav section-nav--auf" aria-label="Aufgaben-Navigation">
+        <h3>Aufgaben</h3>
+        <ul class="section-nav__links">
+          <li><a href="aufgabe-1.html">1 – Analyse</a></li>
+          <li><a href="aufgabe-2.html">2 – Rekonstruktion</a></li>
+          <li><a href="aufgabe-3.html">3 – Transfer</a></li>
+          <li><a href="aufgabe-4.html">4 – Peer-Review</a></li>
+          <li><a href="aufgabe-5.html" class="active">5 – Reflexion</a></li>
+          <li><a href="aufgabe-6.html">6 – Entwicklung</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aufgabenbeschreibung -->
+      <div class="content-card content-card--auf">
+
+        <div class="task-header">
+          <div class="task-number">5</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">KI-Einsatz pädagogisch einschätzen</h2>
+            <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom:0;">Bloom-Stufe 5 (Bewerten) – kritische Reflexion</p>
+          </div>
+        </div>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Aufgabe</div>
+          <p>In dieser Aufgabe geht es nicht um technisches Prompting, sondern um die <strong>pädagogische Dimension</strong>: Wann hilft KI im Unterricht wirklich – und wann schaden wir damit den Lernzielen?</p>
+        </div>
+
+        <div class="info-box info-box--yellow">
+          <div class="info-box__title">Kein Richtig oder Falsch</div>
+          <p>Diese Reflexion hat keine Musterlösung. Es geht darum, dass du deine eigene begründete Haltung entwickelst. Es gibt jedoch didaktische Kriterien, die hilfreich sind.</p>
+        </div>
+
+      </div>
+
+      <!-- Teil A: Szenarien einschätzen -->
+      <div class="content-card content-card--auf">
+        <h3>Teil A: Szenarien bewerten</h3>
+        <p>Lies jedes Szenario und entscheide: Ist dieser KI-Einsatz pädagogisch sinnvoll, problematisch oder kommt es darauf an? Begründe kurz.</p>
+
+        <!-- Szenario 1 -->
+        <div class="reflex-card">
+          <div class="reflex-card__question">Szenario 1: Differenzierung automatisieren</div>
+          <p>Eine Lehrkraft gibt der KI einen Einheitstext und lässt sich drei Versionen erstellen: für Schüler:innen mit Förderbedarf, für das Mittelniveau und für Hochleistende. Sie prüft die Texte kurz und verteilt sie.</p>
+        </div>
+        <label class="input-label" for="szenario-1">Deine Einschätzung:</label>
+        <textarea
+          class="input-area"
+          id="szenario-1"
+          placeholder="Sinnvoll / Problematisch / Kommt drauf an – weil …"
+          rows="4"
+        ></textarea>
+
+        <!-- Szenario 2 -->
+        <div class="reflex-card" style="margin-top: 1.5rem;">
+          <div class="reflex-card__question">Szenario 2: KI schreibt den Aufsatz für die Schülerin</div>
+          <p>Eine Schülerin schreibt einen Aufsatz mit Hilfe von ChatGPT. Sie ändert danach einzelne Sätze, um den Text „eigener" zu machen. Die Lehrkraft korrigiert und bewertet ihn.</p>
+        </div>
+        <label class="input-label" for="szenario-2">Deine Einschätzung:</label>
+        <textarea
+          class="input-area"
+          id="szenario-2"
+          placeholder="Welche Lernziele werden verfehlt? Was ist das Problem? Oder: Gibt es Situationen, in denen das legitim wäre?"
+          rows="4"
+        ></textarea>
+
+        <!-- Szenario 3 -->
+        <div class="reflex-card" style="margin-top: 1.5rem;">
+          <div class="reflex-card__question">Szenario 3: KI als Gesprächspartner beim Schreiben</div>
+          <p>Schüler:innen schreiben einen Aufsatz und dürfen zwischendurch die KI fragen: „Was könnte ich als nächstes Argument bringen?" oder „Klingt mein Einstieg gut?" – Die eigentliche Formulierung kommt aber von den Schüler:innen.</p>
+        </div>
+        <label class="input-label" for="szenario-3">Deine Einschätzung:</label>
+        <textarea
+          class="input-area"
+          id="szenario-3"
+          placeholder="Sinnvoll / Problematisch / Kommt drauf an – weil …"
+          rows="4"
+        ></textarea>
+
+        <!-- Szenario 4 -->
+        <div class="reflex-card" style="margin-top: 1.5rem;">
+          <div class="reflex-card__question">Szenario 4: KI für repetitive Lehreraufgaben</div>
+          <p>Eine Lehrkraft nutzt KI ausschließlich für Verwaltungsaufgaben: Elternbriefe, Stundenpläne, Protokolle. Den eigentlichen Unterricht plant und hält sie selbst ohne KI.</p>
+        </div>
+        <label class="input-label" for="szenario-4">Deine Einschätzung:</label>
+        <textarea
+          class="input-area"
+          id="szenario-4"
+          placeholder="Sinnvoll / Problematisch / Kommt drauf an – weil …"
+          rows="4"
+        ></textarea>
+
+        <!-- Szenario 5 -->
+        <div class="reflex-card" style="margin-top: 1.5rem;">
+          <div class="reflex-card__question">Szenario 5: KI-generierte Erklärvideos als Hausaufgabe</div>
+          <p>Eine Lehrkraft erstellt für jede Unterrichtseinheit ein KI-generiertes Erklärvideo (Text-zu-Sprache mit KI-Stimme) und gibt es als Hausaufgabe. Im Unterricht wird dann nur noch geübt.</p>
+        </div>
+        <label class="input-label" for="szenario-5">Deine Einschätzung:</label>
+        <textarea
+          class="input-area"
+          id="szenario-5"
+          placeholder="Sinnvoll / Problematisch / Kommt drauf an – weil …"
+          rows="4"
+        ></textarea>
+
+      </div>
+
+      <!-- Teil B: Eigene Kriterien entwickeln -->
+      <div class="content-card content-card--auf">
+        <h3>Teil B: Eigene Kriterien entwickeln</h3>
+
+        <p>Entwickle auf Basis deiner Reflexion zu den Szenarien <strong>drei persönliche Kriterien</strong>, nach denen du in Zukunft entscheidest, ob ein KI-Einsatz im Unterricht pädagogisch sinnvoll ist.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Orientierungsfragen</div>
+          <ul>
+            <li>Wird durch den KI-Einsatz ein zentrales Lernziel umgangen oder unterstützt?</li>
+            <li>Übernimmt die KI Denkarbeit, die Schüler:innen selbst leisten sollten?</li>
+            <li>Entlastet der KI-Einsatz die Lehrkraft bei Aufgaben, die keine pädagogische Expertise brauchen?</li>
+            <li>Lernen Schüler:innen durch den KI-Einsatz kritisch mit KI umzugehen – oder nur zu konsumieren?</li>
+          </ul>
+        </div>
+
+        <label class="input-label" for="kriterium-1">Kriterium 1:</label>
+        <textarea
+          class="input-area"
+          id="kriterium-1"
+          placeholder="KI-Einsatz ist sinnvoll, wenn … / KI-Einsatz ist problematisch, wenn …"
+          rows="3"
+        ></textarea>
+
+        <label class="input-label" for="kriterium-2" style="margin-top: 1rem;">Kriterium 2:</label>
+        <textarea
+          class="input-area"
+          id="kriterium-2"
+          placeholder="KI-Einsatz ist sinnvoll, wenn … / KI-Einsatz ist problematisch, wenn …"
+          rows="3"
+        ></textarea>
+
+        <label class="input-label" for="kriterium-3" style="margin-top: 1rem;">Kriterium 3:</label>
+        <textarea
+          class="input-area"
+          id="kriterium-3"
+          placeholder="KI-Einsatz ist sinnvoll, wenn … / KI-Einsatz ist problematisch, wenn …"
+          rows="3"
+        ></textarea>
+
+      </div>
+
+      <!-- Teil C: Persönliche Positionierung -->
+      <div class="content-card content-card--auf">
+        <h3>Teil C: Meine Haltung zu KI im Unterricht</h3>
+
+        <label class="input-label" for="haltung">In einem Satz: Welche Rolle soll KI in meinem Unterricht spielen?</label>
+        <textarea
+          class="input-area"
+          id="haltung"
+          placeholder="KI soll in meinem Unterricht … (Werkzeug / kein Thema / Lerngegenstand / Zeitsparer für …)"
+          rows="3"
+          data-maxlength="300"
+        ></textarea>
+
+        <label class="input-label" for="konkret-naechste-woche" style="margin-top: 1rem;">Was wirst du in der nächsten Woche konkret ausprobieren?</label>
+        <textarea
+          class="input-area"
+          id="konkret-naechste-woche"
+          placeholder="z. B. Ich werde den Prompt aus Aufgabe 3 tatsächlich einsetzen / Ich werde … ausprobieren"
+          rows="3"
+        ></textarea>
+
+        <label class="input-label" for="groesste-bedenken" style="margin-top: 1rem;">Was ist dein größtes Bedenken beim KI-Einsatz?</label>
+        <textarea
+          class="input-area"
+          id="groesste-bedenken"
+          placeholder="z. B. Datenschutz / Qualität der Ergebnisse / Schüler:innen denken nicht mehr selbst / …"
+          rows="3"
+        ></textarea>
+
+      </div>
+
+      <!-- Plenum-Hinweis -->
+      <div class="info-box info-box--green">
+        <div class="info-box__title">Vorbereitung für das Plenum</div>
+        <p>Die Referentin / der Referent wird im Anschluss einige Einschätzungen im Plenum besprechen. Halte dein Kriterium aus Teil B bereit – du könntest gebeten werden, es vorzustellen.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="aufgabe-4.html">← Aufgabe 4</a>
+        <a class="btn btn--primary-auf" href="aufgabe-6.html">Weiter: Aufgabe 6 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

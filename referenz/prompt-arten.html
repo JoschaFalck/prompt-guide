@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt-Arten – Referenz</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref nav-btn--active" href="was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--ref">
+        <p class="page-header__label">Referenz</p>
+        <h1>Prompt-Arten</h1>
+        <p class="page-header__subtitle">Verschiedene Strategien – je nach Ziel das passende Werkzeug</p>
+      </header>
+
+      <nav class="section-nav section-nav--ref" aria-label="Referenz-Navigation">
+        <h3>Referenzbereich</h3>
+        <ul class="section-nav__links">
+          <li><a href="was-ist-ein-prompt.html">Was ist ein Prompt?</a></li>
+          <li><a href="prompt-anatomie.html">Prompt-Anatomie</a></li>
+          <li><a href="prompt-arten.html" class="active">Prompt-Arten</a></li>
+          <li><a href="beispiele.html">Beispielsammlung</a></li>
+          <li><a href="tipps.html">Tipps &amp; Fehler</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-card content-card--ref">
+        <h2>Warum gibt es verschiedene Arten?</h2>
+        <p>Je nachdem, was du von der KI brauchst, gibt es unterschiedliche Strategien. Eine klare Anweisung (Instruktion) reicht für viele Aufgaben – für komplexere Aufgaben hilft es, der KI mehr Orientierung zu geben.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Für den Einstieg genügt</div>
+          <p>Als Lehrkraft reichen für den Alltag vor allem <strong>Instruktions-Prompts</strong> und <strong>Rollenpriming</strong>. Die anderen Arten sind nützlich, wenn du komplexere Ergebnisse brauchst.</p>
+        </div>
+      </div>
+
+      <!-- Art 1: Instruktions-Prompt -->
+      <div class="content-card content-card--ref">
+        <h2>1. Instruktions-Prompt</h2>
+        <p>Die häufigste und einfachste Form: Du gibst eine direkte Anweisung. Die KI führt sie aus.</p>
+
+        <p><strong>Wann?</strong> Bei klaren, abgegrenzten Aufgaben – Text erstellen, überarbeiten, zusammenfassen, erklären.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Unterrichtsmaterial</div>
+          Erstelle ein Arbeitsblatt für Klasse 5 zum Thema „Nahrungskreislauf im Wald". Es soll eine kurze Einleitung, ein Lückentext mit Lösungskasten und zwei Reflexionsfragen enthalten. Formuliere alles in einfacher Sprache.
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Differenzierung</div>
+          Vereinfache den folgenden Text auf Sprachniveau A2 (Deutsch als Zweitsprache). Behalte den wesentlichen Inhalt bei, ersetze Fremdwörter durch Alltagssprache und begrenze den Satzbau auf Hauptsätze. [Text einfügen]
+        </div>
+      </div>
+
+      <!-- Art 2: Rollenpriming -->
+      <div class="content-card content-card--ref">
+        <h2>2. Rollenpriming</h2>
+        <p>Du weist der KI eine bestimmte Rolle oder Persona zu. Das beeinflusst, aus welcher Perspektive und mit welchem Expertenwissen die KI antwortet.</p>
+
+        <p><strong>Wann?</strong> Wenn du Perspektivenwechsel brauchst – z. B. die Sicht einer Schülerin, eines Historikers oder einer Berufsberaterin.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Schülerperspektive für Unterrichtsplanung</div>
+          Du bist eine 14-jährige Schülerin der 8. Klasse mit wenig Interesse an Geschichte. Wie reagierst du auf folgende Aufgabenstellung: „Analysiere die Ursachen des Ersten Weltkriegs anhand von drei Primärquellen"? Beschreibe, was dich daran überfordert oder langweilt, und was die Aufgabe interessanter machen würde.
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Fachdidaktische Perspektive</div>
+          Du bist eine erfahrene Mathematikdidaktikerin. Erkläre mir, wie ich das Thema „quadratische Gleichungen" so einführen kann, dass Schülerinnen und Schüler der 9. Klasse einen intuitiven Zugang bekommen – bevor ich mit dem formalen Lösungsweg beginne. Gib konkrete Unterrichtsideen.
+        </div>
+      </div>
+
+      <!-- Art 3: Few-Shot-Prompt -->
+      <div class="content-card content-card--ref">
+        <h2>3. Few-Shot-Prompt</h2>
+        <p>Du zeigst der KI ein oder mehrere Beispiele (englisch: „shots") für das, was du möchtest. Die KI erkennt das Muster und setzt es fort.</p>
+
+        <p><strong>Wann?</strong> Wenn du ein bestimmtes Format, einen Stil oder eine Struktur reproduzieren willst – z. B. eine Aufgabenreihe in einem einheitlichen Stil.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Aufgaben nach Vorlage</div>
+          Ich zeige dir zwei Aufgaben im Stil, den ich möchte. Erstelle danach drei weitere Aufgaben zum selben Thema.
+
+Vorlage 1: „Die Schülerin kauft 3 Hefte für je 1,50 €. Wie viel zahlt sie insgesamt?"
+Vorlage 2: „Ein Buch kostet 8,40 €. Die Schülerin hat 20 € dabei. Wie viel bekommt sie zurück?"
+
+Thema der neuen Aufgaben: Einkaufen im Supermarkt, Klasse 5.
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Feedback nach Vorlage</div>
+          Ich gebe dir ein Beispiel für konstruktives Schreibfeedback:
+
+Beispiel: „Dein Einstieg zieht die Leser:innen gut rein (Stärke). Im zweiten Absatz bleibt unklar, was deine Hauptthese ist – schreibe sie als klaren Satz ans Ende der Einleitung (Tipp)."
+
+Gib mir jetzt entsprechendes Feedback für diesen Schüleraufsatz: [Aufsatz einfügen]
+        </div>
+      </div>
+
+      <!-- Art 4: Chain-of-Thought -->
+      <div class="content-card content-card--ref">
+        <h2>4. Chain-of-Thought-Prompt</h2>
+        <p>Du bittest die KI, ihren Denkweg Schritt für Schritt zu zeigen, bevor sie eine Antwort gibt. Das verbessert die Qualität bei komplexen Aufgaben deutlich.</p>
+
+        <p><strong>Wann?</strong> Bei Aufgaben, die logisches Schlussfolgern, Mathematik oder mehrschichtige Analysen erfordern.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel – Lösungsweg für Musteraufgabe</div>
+          Löse folgende Aufgabe Schritt für Schritt und erkläre jeden Schritt so, als würdest du ihn einer Schülerin der 8. Klasse erklären:
+
+„Ein Zug fährt mit 120 km/h. Er muss 360 km zurücklegen. Nach welcher Zeit hat er 3/4 der Strecke zurückgelegt?"
+
+Zeige: Schritt 1 – Was gesucht ist. Schritt 2 – Welche Formel verwendet wird. Schritt 3 – Die Rechnung. Schritt 4 – Die Antwort in einem vollständigen Satz.
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Einfache Aktivierung</div>
+          Denke Schritt für Schritt nach, bevor du antwortest.
+        </div>
+
+        <div class="info-box info-box--yellow">
+          <div class="info-box__title">Hinweis</div>
+          <p>Manchmal reicht es, am Ende des Prompts „Denke Schritt für Schritt nach" hinzuzufügen, um die Antwortqualität spürbar zu verbessern.</p>
+        </div>
+      </div>
+
+      <!-- Art 5: Iterativer Prompt -->
+      <div class="content-card content-card--ref">
+        <h2>5. Iterativer Prompt (Nachfassen)</h2>
+        <p>Prompting ist kein Einmalvorgang. Du kannst im Dialog nachfassen, Ergebnisse verfeinern und die KI um Anpassungen bitten.</p>
+
+        <p><strong>Wann?</strong> Immer – gute Ergebnisse entstehen oft erst nach zwei bis drei Runden.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Typische Nachfass-Prompts</div>
+          „Mache den Text kürzer – maximal 100 Wörter."
+          „Formuliere die Aufgaben schwieriger für Klasse 9 statt Klasse 7."
+          „Ersetze alle Passivkonstruktionen durch aktive Formulierungen."
+          „Füge ein konkretes Alltagsbeispiel für jeden Punkt hinzu."
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Profi-Tipp</div>
+          <p>Du musst den gesamten Prompt nicht neu schreiben. Schreibe im Chat einfach: „Mache Aufgabe 3 schwieriger" oder „Füge noch eine vierte Aufgabe hinzu." Die KI kennt den vorherigen Kontext.</p>
+        </div>
+      </div>
+
+      <!-- Übersicht -->
+      <div class="content-card content-card--ref">
+        <h2>Übersicht: Welche Art wann?</h2>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Prompt-Art</th>
+                <th>Wann einsetzen?</th>
+                <th>Aufwand</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Instruktion</strong></td>
+                <td>Klare, abgegrenzte Aufgaben (Text erstellen, zusammenfassen)</td>
+                <td>Niedrig</td>
+              </tr>
+              <tr>
+                <td><strong>Rollenpriming</strong></td>
+                <td>Perspektivenwechsel, Expertensicht</td>
+                <td>Niedrig</td>
+              </tr>
+              <tr>
+                <td><strong>Few-Shot</strong></td>
+                <td>Einheitlicher Stil / Format reproduzieren</td>
+                <td>Mittel</td>
+              </tr>
+              <tr>
+                <td><strong>Chain-of-Thought</strong></td>
+                <td>Komplexe Aufgaben, Mathematik, Analyse</td>
+                <td>Niedrig–Mittel</td>
+              </tr>
+              <tr>
+                <td><strong>Iterativ</strong></td>
+                <td>Immer – zum Verfeinern des Ergebnisses</td>
+                <td>Niedrig</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="prompt-anatomie.html">← Prompt-Anatomie</a>
+        <a class="btn btn--primary-ref" href="beispiele.html">Weiter: Beispielsammlung →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

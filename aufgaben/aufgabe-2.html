@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 2: Rekonstruktion – Aufgaben</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf nav-btn--active" href="aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--auf">
+        <p class="page-header__label">Aufgabenbereich</p>
+        <h1>Aufgabe 2: Rekonstruktion</h1>
+        <p class="page-header__subtitle">Einen schwachen Prompt verbessern – aus schlecht wird gut</p>
+      </header>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-bar-container" role="navigation" aria-label="Aufgaben-Fortschritt">
+        <div class="progress-bar-container__label">
+          <span>Aufgabe 2 von 6</span>
+          <span>33 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 33%;"></div>
+        </div>
+        <ol class="progress-steps">
+          <li class="done"><a href="aufgabe-1.html">1</a></li>
+          <li class="current"><a href="aufgabe-2.html" aria-current="page">2</a></li>
+          <li><a href="aufgabe-3.html">3</a></li>
+          <li><a href="aufgabe-4.html">4</a></li>
+          <li><a href="aufgabe-5.html">5</a></li>
+          <li><a href="aufgabe-6.html">6</a></li>
+        </ol>
+      </div>
+
+      <!-- Aufgaben-Navigation -->
+      <nav class="section-nav section-nav--auf" aria-label="Aufgaben-Navigation">
+        <h3>Aufgaben</h3>
+        <ul class="section-nav__links">
+          <li><a href="aufgabe-1.html">1 – Analyse</a></li>
+          <li><a href="aufgabe-2.html" class="active">2 – Rekonstruktion</a></li>
+          <li><a href="aufgabe-3.html">3 – Transfer</a></li>
+          <li><a href="aufgabe-4.html">4 – Peer-Review</a></li>
+          <li><a href="aufgabe-5.html">5 – Reflexion</a></li>
+          <li><a href="aufgabe-6.html">6 – Entwicklung</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aufgabenbeschreibung -->
+      <div class="content-card content-card--auf">
+
+        <div class="task-header">
+          <div class="task-number">2</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Schwachen Prompt verbessern</h2>
+            <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom:0;">Bloom-Stufe 3 (Anwenden)</p>
+          </div>
+        </div>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Aufgabe</div>
+          <p>Du erhältst zwei schwache Prompts aus dem Schulalltag. Verbessere jeden Prompt, indem du die fünf Bausteine (Rolle, Aufgabe, Kontext, Format, Einschränkung) bewusst einsetzt. Nutze die Vorlage unter jedem Prompt als Gerüst.</p>
+        </div>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Hilfreiche Referenz</div>
+          <p>Falls du die fünf Bausteine nachschlagen möchtest: <a href="../referenz/prompt-anatomie.html">→ Prompt-Anatomie</a></p>
+        </div>
+
+      </div>
+
+      <!-- Aufgabe 2.1 -->
+      <div class="content-card content-card--auf">
+
+        <h3>Situation 1: Mathe-Hausaufgaben</h3>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Kontext</div>
+          <p>Eine Mathematiklehrkraft unterrichtet Klasse 8 an einer Realschule. Sie möchte Hausaufgaben zum Thema „lineare Funktionen" erstellen – einfache Aufgaben für Schüler:innen, die noch unsicher sind, und anspruchsvollere für Fortgeschrittene.</p>
+        </div>
+
+        <h4>Der ursprüngliche Prompt:</h4>
+        <div class="prompt-block">
+          Erstelle Hausaufgaben zu linearen Funktionen.
+        </div>
+
+        <h4>Was fehlt hier?</h4>
+        <label class="input-label" for="fehlt-2-1">Notiere kurz, was an diesem Prompt fehlt:</label>
+        <textarea
+          class="input-area"
+          id="fehlt-2-1"
+          placeholder="Was müsste die KI wissen, um nützliche Hausaufgaben zu erstellen?"
+          rows="3"
+        ></textarea>
+
+        <h4 style="margin-top: 1.5rem;">Dein verbesserter Prompt:</h4>
+        <p style="font-size: 0.9rem; color: var(--gray-500);">Schreibe hier deinen vollständigen, verbesserten Prompt:</p>
+
+        <label class="input-label" for="verbessert-2-1">Verbesserter Prompt:</label>
+        <textarea
+          class="input-area"
+          id="verbessert-2-1"
+          placeholder="Du bist … Erstelle … für … Die Schüler:innen kennen … Format: … Bitte vermeide …"
+          rows="8"
+          data-maxlength="800"
+        ></textarea>
+
+        <div class="info-box info-box--yellow" style="margin-top: 1rem;">
+          <div class="info-box__title">Gerüst-Hilfe (bei Bedarf)</div>
+          <ul>
+            <li><strong>Rolle:</strong> „Du bist Mathematiklehrkraft an einer Realschule …"</li>
+            <li><strong>Aufgabe:</strong> „Erstelle differenzierte Hausaufgaben …"</li>
+            <li><strong>Kontext:</strong> „Klasse 8, Thema lineare Funktionen, Vorwissen: … Zwei Schwierigkeitsstufen …"</li>
+            <li><strong>Format:</strong> „Je 3 Aufgaben pro Stufe, nummeriert, mit Stern-Symbol ★ / ★★"</li>
+            <li><strong>Einschränkung:</strong> „Keine Aufgaben, die Computereinsatz erfordern. Alltagskontexte."</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Aufgabe 2.2 -->
+      <div class="content-card content-card--auf">
+
+        <h3>Situation 2: Elternbrief zur Klassenfahrt</h3>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Kontext</div>
+          <p>Eine Lehrkraft muss einen Elternbrief für die bevorstehende Klassenfahrt schreiben. Die Fahrt dauert 4 Tage, geht in die Eifel und umfasst Wanderungen und eine Burgbesichtigung. Die Klasse ist eine 6. Klasse. Eltern sollen das Formular am Ende des Briefes abgeben.</p>
+        </div>
+
+        <h4>Der ursprüngliche Prompt:</h4>
+        <div class="prompt-block">
+          Schreib einen Elternbrief über die Klassenfahrt.
+        </div>
+
+        <h4>Was fehlt hier?</h4>
+        <label class="input-label" for="fehlt-2-2">Notiere kurz, was an diesem Prompt fehlt:</label>
+        <textarea
+          class="input-area"
+          id="fehlt-2-2"
+          placeholder="Was fehlt? Welche Informationen braucht die KI unbedingt?"
+          rows="3"
+        ></textarea>
+
+        <h4 style="margin-top: 1.5rem;">Dein verbesserter Prompt:</h4>
+
+        <label class="input-label" for="verbessert-2-2">Verbesserter Prompt:</label>
+        <textarea
+          class="input-area"
+          id="verbessert-2-2"
+          placeholder="Du bist … Schreibe einen Elternbrief … Die Fahrt findet … statt. Der Brief soll … enthalten. Format: … Ton: …"
+          rows="8"
+          data-maxlength="800"
+        ></textarea>
+
+      </div>
+
+      <!-- Musterlösung -->
+      <div class="content-card content-card--auf">
+        <h3>Musterlösung / Hinweise</h3>
+        <div class="solution-reveal">
+          <button class="solution-reveal__btn" type="button">▸ Musterlösung / Hinweise anzeigen</button>
+          <div class="solution-reveal__content">
+
+            <h4>Situation 1 – Möglicher verbesserter Prompt</h4>
+            <div class="prompt-block">
+              Du bist Mathematiklehrerin an einer Realschule. Erstelle differenzierte Hausaufgaben zum Thema lineare Funktionen. Klasse 8, die Schüler:innen kennen das Koordinatensystem und können Wertetabellen erstellen, haben aber noch keine Steigungsformel behandelt. Erstelle je drei Aufgaben für zwei Niveaustufen: Grundniveau (★ – Punkte ablesen und einzeichnen) und erweitertes Niveau (★★ – Steigung aus zwei Punkten berechnen). Nummeriere die Aufgaben 1★a/b/c und 2★★a/b/c. Verwende ausschließlich Alltagskontexte (Taschengeld, Sport, Schulweg). Keine Aufgaben, die Taschenrechner oder digitale Geräte erfordern.
+            </div>
+
+            <h4>Was wurde verbessert?</h4>
+            <ul>
+              <li>Rolle: Mathematiklehrerin an Realschule → bestimmt Stil und Niveau</li>
+              <li>Kontext: Klasse 8, konkretes Vorwissen und fehlendes Vorwissen</li>
+              <li>Format: Zwei Niveaustufen, Nummerierung, Anzahl pro Stufe</li>
+              <li>Einschränkung: Alltagskontexte, kein Taschenrechner</li>
+            </ul>
+
+            <h4>Situation 2 – Möglicher verbesserter Prompt</h4>
+            <div class="prompt-block">
+              Du bist Klassenlehrkraft der 6d an einer Gesamtschule. Schreibe einen formellen Elternbrief zur bevorstehenden Klassenfahrt. Folgende Infos: Ziel: Jugendherberge Eifel. Dauer: 4 Tage (Mo–Do). Inhalte: zwei Tageswanderungen, Burgbesichtigung Nürburg, freie Zeit am See. Kosten: 180 €. Einzureichen bis: [Datum]. Format: Briefformat mit Absender oben, freundliche aber formelle Anrede. Abschnitte: Begrüßung, Programm, praktische Infos (Packliste, Kosten), Rückmeldung. Am Ende: Einverständniserklärung als abzutrennendes Formular mit Elternunterschrift und Kontaktnummer für Notfälle. Ton: wertschätzend, klar, nicht zu bürokratisch. Keine allgemeinen Floskeln am Anfang.
+            </div>
+
+            <div class="info-box info-box--green">
+              <div class="info-box__title">Was macht den Unterschied?</div>
+              <p>Der verbesserte Prompt spart dir Nacharbeit, weil die KI genau weiß, was ins Formular gehört, welchen Ton der Brief haben soll und welche Informationen enthalten sein müssen. Den ursprünglichen Prompt würde die KI mit einem allgemeinen Standardbrief beantworten, den du fast komplett umschreiben müsstest.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="aufgabe-1.html">← Aufgabe 1</a>
+        <a class="btn btn--primary-auf" href="aufgabe-3.html">Weiter: Aufgabe 3 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

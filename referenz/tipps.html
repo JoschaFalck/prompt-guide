@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipps &amp; häufige Fehler – Referenz</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref nav-btn--active" href="was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--ref">
+        <p class="page-header__label">Referenz</p>
+        <h1>Tipps &amp; häufige Fehler</h1>
+        <p class="page-header__subtitle">Was macht einen Prompt wirklich gut – und was geht schief?</p>
+      </header>
+
+      <nav class="section-nav section-nav--ref" aria-label="Referenz-Navigation">
+        <h3>Referenzbereich</h3>
+        <ul class="section-nav__links">
+          <li><a href="was-ist-ein-prompt.html">Was ist ein Prompt?</a></li>
+          <li><a href="prompt-anatomie.html">Prompt-Anatomie</a></li>
+          <li><a href="prompt-arten.html">Prompt-Arten</a></li>
+          <li><a href="beispiele.html">Beispielsammlung</a></li>
+          <li><a href="tipps.html" class="active">Tipps &amp; Fehler</a></li>
+        </ul>
+      </nav>
+
+      <!-- ===== TOP-TIPPS ===== -->
+      <div class="content-card content-card--ref">
+        <h2>Die 7 wichtigsten Tipps</h2>
+
+        <details open>
+          <summary>1. Immer eine Zielgruppe nennen</summary>
+          <div class="details-body">
+            <p>Die häufigste Verbesserung, die sofort wirkt: Sag der KI, <em>für wen</em> das Ergebnis ist. „Schüler:innen der 7. Klasse einer Gesamtschule" liefert ein anderes Ergebnis als „Abiturienten" oder „Grundschulkinder".</p>
+            <div class="prompt-block">
+              <div class="prompt-block__label">Vorher</div>
+              Erkläre das Ohmsche Gesetz.
+            </div>
+            <div class="prompt-block">
+              <div class="prompt-block__label">Nachher</div>
+              Erkläre das Ohmsche Gesetz für Schüler:innen der 9. Klasse, die Strom und Spannung kennen, aber noch keine Formeln mit Variablen.
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>2. Format explizit vorgeben</summary>
+          <div class="details-body">
+            <p>Ohne Formatangabe produziert die KI meistens Fließtext – auch wenn du eine Tabelle oder Liste brauchst. Sage explizit: „als Tabelle", „als Stichpunkte", „als nummerierte Liste", „als Arbeitsblatt".</p>
+            <div class="prompt-block">
+              <div class="prompt-block__label">Schlecht</div>
+              Gib mir die Vor- und Nachteile von Gruppenarbeit.
+            </div>
+            <div class="prompt-block">
+              <div class="prompt-block__label">Besser</div>
+              Erstelle eine zweispaltige Tabelle (Vorteile / Nachteile) mit jeweils fünf Punkten zur Methode Gruppenarbeit im Schulunterricht.
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>3. Nie beim ersten Ergebnis aufhören</summary>
+          <div class="details-body">
+            <p>Das erste Ergebnis ist selten das beste. Prompting ist ein Dialog. Fasse nach: „Mache es kürzer", „Füge ein Beispiel hinzu", „Schreibe einen alternativen Einstieg". KI-Systeme sind sehr gut darin, Ergebnisse auf Basis von Feedback zu verbessern.</p>
+            <div class="info-box info-box--green">
+              <div class="info-box__title">Typische Nachfass-Formulierungen</div>
+              <ul>
+                <li>„Mach Aufgabe 2 schwieriger."</li>
+                <li>„Schreibe den ersten Satz um – er klingt zu formell."</li>
+                <li>„Füge ein konkretes Alltagsbeispiel hinzu."</li>
+                <li>„Kürze den Text auf die Hälfte, behalte die wesentlichen Punkte."</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>4. Vorwissen der Schüler:innen angeben</summary>
+          <div class="details-body">
+            <p>Wenn du der KI sagst, was die Klasse bereits weiß (und was nicht), wird das Ergebnis direkt im Unterricht einsetzbar. Ohne diese Angabe orientiert sich die KI an einem allgemeinen Durchschnitt, der oft nicht passt.</p>
+            <div class="prompt-block">
+              <div class="prompt-block__label">Mit Vorwissen-Angabe</div>
+              Erkläre das Konzept der Bruchrechnung für Klasse 6. Die Schüler:innen können bereits addieren und subtrahieren mit gleichen Nennern. Multiplizieren und Dividieren von Brüchen ist noch unbekannt.
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>5. Klare Verben verwenden</summary>
+          <div class="details-body">
+            <p>Verben wie „mach was mit", „erkläre irgendwie" oder „schreib einen Text über" sind zu vage. Nutze präzise Operatoren:</p>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Vage</th><th>Besser</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Schreib was über Photosynthese</td><td>Fasse die Photosynthese in einem Merksatz zusammen</td></tr>
+                  <tr><td>Mach Aufgaben</td><td>Entwickle drei gestaffelte Übungsaufgaben zum Thema …</td></tr>
+                  <tr><td>Erkläre das irgendwie</td><td>Erkläre den Begriff mit einer Alltagsanalogie und einem Beispiel aus dem Schulalltag</td></tr>
+                  <tr><td>Hilfreich sein</td><td>Gib mir eine Checkliste mit fünf Punkten zur Vorbereitung von …</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>6. Den KI-Output immer prüfen</summary>
+          <div class="details-body">
+            <p>KI-Systeme können Fehler machen, veraltete Informationen liefern oder Quellen erfinden. Prüfe fachlich kritische Inhalte immer selbst. Das gilt besonders für:</p>
+            <ul>
+              <li>Historische Fakten und Daten</li>
+              <li>Naturwissenschaftliche Zusammenhänge</li>
+              <li>Quellen und Literaturangaben (KI „erfindet" manchmal Bücher)</li>
+              <li>Sprachliche Korrektheit bei Fremdsprachenmaterial</li>
+            </ul>
+            <div class="info-box info-box--red">
+              <div class="info-box__title">Vertraue nie blind</div>
+              <p>KI ist kein Expertensystem – sie produziert plausibel klingende Texte, nicht immer korrekte. Du bist die Fachperson im Raum.</p>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>7. Lange Prompts sind kein Problem</summary>
+          <div class="details-body">
+            <p>Viele Nutzer:innen glauben, Prompts müssten kurz sein. Das Gegenteil ist wahr: Je mehr relevante Informationen du gibst, desto besser das Ergebnis. Ein Prompt mit 200 Wörtern kann ein erheblich besseres Ergebnis liefern als einer mit 20 Wörtern.</p>
+            <p>Du kannst auch Text direkt einfügen: Schüleraufsätze, bestehende Aufgaben, Lehrplanauszüge – alles, was der KI hilft, deine Situation zu verstehen.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- ===== HÄUFIGE FEHLER ===== -->
+      <div class="content-card content-card--ref">
+        <h2>Die 5 häufigsten Fehler</h2>
+
+        <div class="info-box info-box--red">
+          <div class="info-box__title">Fehler 1: Zu vage – kein Kontext, keine Zielgruppe</div>
+          <p>„Schreib einen Text über den Klimawandel." – Die KI weiß nicht: Für wen? Wie lang? Aus welcher Perspektive?</p>
+          <p><strong>Fix:</strong> Füge mindestens Klassenstufe, Zweck und Länge hinzu.</p>
+        </div>
+
+        <div class="info-box info-box--red">
+          <div class="info-box__title">Fehler 2: Kein Format angegeben</div>
+          <p>Du brauchst ein Arbeitsblatt mit Lücken – aber du fragst nur nach einem „Text". Die KI gibt Fließtext zurück, den du nicht direkt verwenden kannst.</p>
+          <p><strong>Fix:</strong> „Als Arbeitsblatt mit Lückentext und Lösungskasten" explizit formulieren.</p>
+        </div>
+
+        <div class="info-box info-box--red">
+          <div class="info-box__title">Fehler 3: Beim ersten Ergebnis stehenbleiben</div>
+          <p>Das erste Ergebnis ist häufig generisch. Wer nicht nachfasst, gibt auf, bevor das eigentlich nützliche Ergebnis kommt.</p>
+          <p><strong>Fix:</strong> Mindestens eine Runde Feedback im Chat geben: „Mach es kürzer / spezifischer / anspruchsvoller."</p>
+        </div>
+
+        <div class="info-box info-box--red">
+          <div class="info-box__title">Fehler 4: KI-Output ungeprüft übernehmen</div>
+          <p>KI kann Fakten falsch darstellen, Quellen erfinden oder sprachliche Fehler produzieren. Besonders bei Fremdsprachen und Sachinhalten immer gegenlesen.</p>
+          <p><strong>Fix:</strong> Als Regel: KI-Texte sind Entwürfe, keine fertigen Materialien.</p>
+        </div>
+
+        <div class="info-box info-box--red">
+          <div class="info-box__title">Fehler 5: Die Schüler:innen vergessen</div>
+          <p>Der häufigste inhaltliche Fehler: Lehrkräfte vergessen anzugeben, für welche Schüler:innen das Material ist. Alter, Vorwissen, besondere Bedürfnisse – all das fehlt.</p>
+          <p><strong>Fix:</strong> Entwickle eine persönliche Standardformel: „Zielgruppe: Klasse X, Vorwissen Y, besonderer Bedarf Z."</p>
+        </div>
+
+      </div>
+
+      <!-- ===== CHECKLISTE ===== -->
+      <div class="content-card content-card--ref">
+        <h2>Prompt-Checkliste vor dem Abschicken</h2>
+        <p>Gehe diese Liste durch, bevor du deinen Prompt absendest:</p>
+
+        <ul>
+          <li>Habe ich die <strong>Aufgabe klar formuliert</strong>? (Welches Verb? Was soll entstehen?)</li>
+          <li>Habe ich die <strong>Zielgruppe</strong> angegeben? (Klasse, Alter, Vorwissen)</li>
+          <li>Habe ich das <strong>Format</strong> spezifiziert? (Tabelle, Liste, Fließtext, Länge)</li>
+          <li>Gibt es wichtigen <strong>Kontext</strong>, den die KI braucht? (aktuelle Unterrichtseinheit, Schulform, besondere Situation)</li>
+          <li>Gibt es etwas, das die KI <strong>vermeiden</strong> soll? (Fachbegriffe ohne Erklärung, bestimmte Inhalte)</li>
+          <li>Habe ich eine <strong>Rolle</strong> vergeben, falls das Ergebnis besser mit Expertise sein soll?</li>
+        </ul>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Merksatz</div>
+          <p>Ein guter Prompt beantwortet die Fragen: <strong>Wer</strong> (Rolle) soll <strong>was</strong> (Aufgabe) <strong>für wen</strong> (Kontext) in welchem <strong>Format</strong> erstellen und was soll <strong>vermieden</strong> werden?</p>
+        </div>
+      </div>
+
+      <!-- ===== KI-GRENZEN ===== -->
+      <div class="content-card content-card--ref">
+        <h2>Was KI nicht kann – und warum das wichtig ist</h2>
+
+        <p>Gutes Prompting beginnt mit einem realistischen Bild davon, was KI leisten kann – und was nicht.</p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>KI kann</th>
+                <th>KI kann nicht zuverlässig</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Text erstellen, umformulieren, kürzen</td>
+                <td>Aktuelle Fakten kennen (Wissensdatum)</td>
+              </tr>
+              <tr>
+                <td>Strukturieren, zusammenfassen</td>
+                <td>Quellen korrekt zitieren (erfindet manchmal)</td>
+              </tr>
+              <tr>
+                <td>Verschiedene Perspektiven darstellen</td>
+                <td>Die Klasse kennen (du bist die Fachperson)</td>
+              </tr>
+              <tr>
+                <td>Ideen entwickeln und variieren</td>
+                <td>Pädagogisch entscheiden, was sinnvoll ist</td>
+              </tr>
+              <tr>
+                <td>Sprache anpassen (Niveau, Ton)</td>
+                <td>Bilder, Grafiken, Videos erstellen</td>
+              </tr>
+              <tr>
+                <td>Aufgaben in mehreren Niveaus erstellen</td>
+                <td>Emotionen und soziale Situationen einschätzen</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-box--yellow">
+          <div class="info-box__title">Pädagogisches Urteil bleibt bei dir</div>
+          <p>KI kann dir Zeitarbeit abnehmen und Ideen liefern. Aber ob ein Material pädagogisch sinnvoll ist, zur Klasse passt und die Lernziele trifft – das liegt ausschließlich bei dir als Lehrkraft.</p>
+        </div>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="beispiele.html">← Beispielsammlung</a>
+        <a class="btn btn--primary-auf" href="../aufgaben/aufgabe-1.html">Zu den Aufgaben →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

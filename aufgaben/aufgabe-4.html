@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 4: Peer-Review – Aufgaben</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf nav-btn--active" href="aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--auf">
+        <p class="page-header__label">Aufgabenbereich</p>
+        <h1>Aufgabe 4: Peer-Review</h1>
+        <p class="page-header__subtitle">Den Prompt einer anderen Person bewerten – strukturiert und konstruktiv</p>
+      </header>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-bar-container" role="navigation" aria-label="Aufgaben-Fortschritt">
+        <div class="progress-bar-container__label">
+          <span>Aufgabe 4 von 6</span>
+          <span>67 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 67%;"></div>
+        </div>
+        <ol class="progress-steps">
+          <li class="done"><a href="aufgabe-1.html">1</a></li>
+          <li class="done"><a href="aufgabe-2.html">2</a></li>
+          <li class="done"><a href="aufgabe-3.html">3</a></li>
+          <li class="current"><a href="aufgabe-4.html" aria-current="page">4</a></li>
+          <li><a href="aufgabe-5.html">5</a></li>
+          <li><a href="aufgabe-6.html">6</a></li>
+        </ol>
+      </div>
+
+      <!-- Aufgaben-Navigation -->
+      <nav class="section-nav section-nav--auf" aria-label="Aufgaben-Navigation">
+        <h3>Aufgaben</h3>
+        <ul class="section-nav__links">
+          <li><a href="aufgabe-1.html">1 – Analyse</a></li>
+          <li><a href="aufgabe-2.html">2 – Rekonstruktion</a></li>
+          <li><a href="aufgabe-3.html">3 – Transfer</a></li>
+          <li><a href="aufgabe-4.html" class="active">4 – Peer-Review</a></li>
+          <li><a href="aufgabe-5.html">5 – Reflexion</a></li>
+          <li><a href="aufgabe-6.html">6 – Entwicklung</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aufgabenbeschreibung -->
+      <div class="content-card content-card--auf">
+
+        <div class="task-header">
+          <div class="task-number">4</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Peer-Review durchführen</h2>
+            <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom:0;">Bloom-Stufen 4 (Analysieren) und 5 (Bewerten)</p>
+          </div>
+        </div>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Ablauf</div>
+          <ol>
+            <li>Tausche dein Gerät mit einer Person aus deiner Tischgruppe.</li>
+            <li>Lies den Prompt aus Aufgabe 3 dieser Person durch.</li>
+            <li>Fülle das Review-Formular auf dieser Seite aus.</li>
+            <li>Tauscht nach dem Review mündlich aus: Was war hilfreich? Was überraschend?</li>
+          </ol>
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Ziel des Peer-Reviews</div>
+          <p>Ein guter Review hilft der anderen Person, den Prompt zu verbessern – nicht ihn zu verurteilen. Formuliere Kritik immer als konkrete Verbesserungsvorschläge.</p>
+        </div>
+
+      </div>
+
+      <!-- Den Prompt der anderen Person abschreiben -->
+      <div class="content-card content-card--auf peer-review-form">
+
+        <h3>Schritt 1: Prompt der anderen Person</h3>
+
+        <label class="input-label" for="peer-prompt">Schreibe den Prompt deiner Review-Partnerin / deines Review-Partners hier ab:</label>
+        <textarea
+          class="input-area"
+          id="peer-prompt"
+          placeholder="Kopiere oder schreibe den Prompt aus Aufgabe 3 deiner Partnerin / deines Partners hier …"
+          rows="6"
+        ></textarea>
+
+      </div>
+
+      <!-- Bewertung nach Kriterien -->
+      <div class="content-card content-card--auf peer-review-form">
+        <h3>Schritt 2: Bewertung nach Bausteinen</h3>
+        <p>Analysiere, welche der fünf Bausteine im Prompt vorhanden sind und wie gut sie umgesetzt sind.</p>
+
+        <div class="review-section">
+          <h4>Rolle</h4>
+          <label class="input-label" for="review-rolle">Ist eine Rolle angegeben? Wie treffend ist sie?</label>
+          <textarea class="input-area" id="review-rolle" rows="2" placeholder="z. B. Ja, die Rolle ‚Biologielehrerin' ist passend, weil … / Fehlt – würde helfen, weil …"></textarea>
+        </div>
+
+        <div class="review-section">
+          <h4>Aufgabe</h4>
+          <label class="input-label" for="review-aufgabe">Ist die Aufgabe klar und eindeutig formuliert?</label>
+          <textarea class="input-area" id="review-aufgabe" rows="2" placeholder="z. B. Die Aufgabe ist klar / Unklar, weil … / Ein präziserer Operator wäre …"></textarea>
+        </div>
+
+        <div class="review-section">
+          <h4>Kontext</h4>
+          <label class="input-label" for="review-kontext">Sind genug Kontextinformationen vorhanden? Was fehlt?</label>
+          <textarea class="input-area" id="review-kontext" rows="2" placeholder="z. B. Gut: Klasse und Vorwissen genannt / Fehlt: Schulform, Zeitrahmen …"></textarea>
+        </div>
+
+        <div class="review-section">
+          <h4>Format</h4>
+          <label class="input-label" for="review-format">Ist das gewünschte Ausgabeformat klar angegeben?</label>
+          <textarea class="input-area" id="review-format" rows="2" placeholder="z. B. Kein Format angegeben – würde ich ergänzen: … / Gut: Tabelle mit 3 Spalten ist klar."></textarea>
+        </div>
+
+        <div class="review-section">
+          <h4>Einschränkung</h4>
+          <label class="input-label" for="review-einschr">Gibt es sinnvolle Einschränkungen? Wäre eine nötig?</label>
+          <textarea class="input-area" id="review-einschr" rows="2" placeholder="z. B. Keine Einschränkung – hier wäre nützlich: … / Gut: ‚Keine Fachbegriffe ohne Erklärung' passt."></textarea>
+        </div>
+
+      </div>
+
+      <!-- Stärken und Verbesserungen -->
+      <div class="content-card content-card--auf peer-review-form">
+        <h3>Schritt 3: Gesamteinschätzung</h3>
+
+        <div class="review-section">
+          <h4>Zwei konkrete Stärken des Prompts</h4>
+          <label class="input-label" for="review-staerken">Was ist besonders gut gelungen?</label>
+          <textarea
+            class="input-area"
+            id="review-staerken"
+            rows="4"
+            placeholder="1. …&#10;2. …"
+          ></textarea>
+        </div>
+
+        <div class="review-section">
+          <h4>Zwei konkrete Verbesserungsvorschläge</h4>
+          <label class="input-label" for="review-verbesser">Was würde das Ergebnis deutlich verbessern?</label>
+          <textarea
+            class="input-area"
+            id="review-verbesser"
+            rows="4"
+            placeholder="1. Ich würde … ergänzen, weil …&#10;2. Ich würde … ändern, weil …"
+          ></textarea>
+        </div>
+
+        <div class="review-section">
+          <h4>Eine Frage, die zum Weiterdenken anregt</h4>
+          <label class="input-label" for="review-frage">Eine offene Frage an die Review-Person:</label>
+          <textarea
+            class="input-area"
+            id="review-frage"
+            rows="2"
+            placeholder="z. B. Hast du überlegt, was passiert wenn … / Wäre es sinnvoll, auch … anzugeben?"
+          ></textarea>
+        </div>
+
+        <!-- Zusammenfassung generieren -->
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button class="btn btn--primary-auf" id="peer-review-summary-btn" type="button">Review zusammenfassen</button>
+        </div>
+        <div id="peer-review-summary" style="margin-top: 1rem;"></div>
+
+      </div>
+
+      <!-- Mündlicher Austausch -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 4: Mündlicher Austausch (ca. 5 Minuten)</h3>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Anleitung</div>
+          <p>Tauscht euch nach dem schriftlichen Review mündlich aus. Nutzt folgende Leitfragen:</p>
+        </div>
+
+        <div class="reflex-card">
+          <div class="reflex-card__question">Was war das überraschendste Feedback, das du bekommen hast?</div>
+          <p style="color: var(--gray-500); font-size: 0.9rem;">Gibt es etwas, das du in deinem Prompt nicht wahrgenommen hast, was die andere Person sofort sah?</p>
+        </div>
+
+        <div class="reflex-card">
+          <div class="reflex-card__question">Was würdest du an deinem Prompt jetzt sofort ändern?</div>
+          <p style="color: var(--gray-500); font-size: 0.9rem;">Eine konkrete Verbesserung, die du nach dem Feedback vornehmen würdest.</p>
+        </div>
+
+        <div class="reflex-card">
+          <div class="reflex-card__question">Was haben die Prompts gemeinsam – und wo unterscheiden sie sich?</div>
+          <p style="color: var(--gray-500); font-size: 0.9rem;">Gibt es Muster, die bei euch beiden auftauchen – typische Stärken oder typische Lücken?</p>
+        </div>
+
+        <label class="input-label" for="austausch-notiz" style="margin-top: 1rem;">Notizen aus dem mündlichen Austausch (optional):</label>
+        <textarea
+          class="input-area"
+          id="austausch-notiz"
+          rows="4"
+          placeholder="Stichworte aus dem Gespräch …"
+        ></textarea>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="aufgabe-3.html">← Aufgabe 3</a>
+        <a class="btn btn--primary-auf" href="aufgabe-5.html">Weiter: Aufgabe 5 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

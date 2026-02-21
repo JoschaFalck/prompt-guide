@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 6: Entwicklung – Aufgaben</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf nav-btn--active" href="aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--auf">
+        <p class="page-header__label">Aufgabenbereich</p>
+        <h1>Aufgabe 6: Entwicklung</h1>
+        <p class="page-header__subtitle">Eigene Prompt-Vorlage für den Unterricht entwickeln</p>
+      </header>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-bar-container" role="navigation" aria-label="Aufgaben-Fortschritt">
+        <div class="progress-bar-container__label">
+          <span>Aufgabe 6 von 6</span>
+          <span>100 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 100%;"></div>
+        </div>
+        <ol class="progress-steps">
+          <li class="done"><a href="aufgabe-1.html">1</a></li>
+          <li class="done"><a href="aufgabe-2.html">2</a></li>
+          <li class="done"><a href="aufgabe-3.html">3</a></li>
+          <li class="done"><a href="aufgabe-4.html">4</a></li>
+          <li class="done"><a href="aufgabe-5.html">5</a></li>
+          <li class="current"><a href="aufgabe-6.html" aria-current="page">6</a></li>
+        </ol>
+      </div>
+
+      <!-- Aufgaben-Navigation -->
+      <nav class="section-nav section-nav--auf" aria-label="Aufgaben-Navigation">
+        <h3>Aufgaben</h3>
+        <ul class="section-nav__links">
+          <li><a href="aufgabe-1.html">1 – Analyse</a></li>
+          <li><a href="aufgabe-2.html">2 – Rekonstruktion</a></li>
+          <li><a href="aufgabe-3.html">3 – Transfer</a></li>
+          <li><a href="aufgabe-4.html">4 – Peer-Review</a></li>
+          <li><a href="aufgabe-5.html">5 – Reflexion</a></li>
+          <li><a href="aufgabe-6.html" class="active">6 – Entwicklung</a></li>
+        </ul>
+      </nav>
+
+      <!-- "Zum Vertiefen"-Banner -->
+      <div class="homework-banner" role="note">
+        <div class="homework-banner__icon">🏠</div>
+        <div class="homework-banner__text">
+          <h3>Zum Vertiefen – Weiterarbeit zuhause</h3>
+          <p>Diese Aufgabe ist als Weiterarbeit gedacht. Falls du in der Fortbildung noch Zeit hast, starte hier. Fertigstellen kannst du sie zuhause – die Eingaben werden in deinem Browser gespeichert.</p>
+        </div>
+      </div>
+
+      <!-- Aufgabenbeschreibung -->
+      <div class="content-card content-card--auf">
+
+        <div class="task-header">
+          <div class="task-number">6</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Eigene Prompt-Vorlage entwickeln</h2>
+            <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom:0;">Bloom-Stufe 6 (Erschaffen) – höchste Kompetenzstufe</p>
+          </div>
+        </div>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Aufgabe</div>
+          <p>Du entwickelst eine <strong>wiederverwendbare Prompt-Vorlage</strong> für deinen Unterricht. Die Vorlage hat Platzhalter, die du bei jedem Einsatz schnell anpassen kannst. Ziel: In der nächsten Unterrichtsvorbereitung rufst du diese Vorlage ab und sparst Zeit.</p>
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Was ist eine Prompt-Vorlage?</div>
+          <p>Eine Vorlage ist ein Prompt mit variablen Teilen in eckigen Klammern: <code>[Klasse]</code>, <code>[Thema]</code>, <code>[Schwierigkeitsgrad]</code>. Du ersetzt diese Platzhalter bei jedem Einsatz durch die aktuellen Werte – der Rest des Prompts bleibt gleich.</p>
+        </div>
+
+      </div>
+
+      <!-- Schritt 1: Anwendungsfall wählen -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 1: Mein Anwendungsfall</h3>
+
+        <p>Für welchen wiederkehrenden Anwendungsfall möchtest du eine Vorlage entwickeln? Wähle einen aus, den du regelmäßig brauchst.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Ideen für Vorlagen</div>
+          <ul>
+            <li>Differenzierte Aufgaben zu einem beliebigen Thema erstellen</li>
+            <li>Einen Text auf ein bestimmtes Sprachniveau vereinfachen</li>
+            <li>Feedback zu Schülerarbeiten generieren</li>
+            <li>Einen Lückentext zu einem beliebigen Thema erstellen</li>
+            <li>Einstiegsfragen für eine Unterrichtsstunde formulieren</li>
+            <li>Elternbriefe zu verschiedenen Anlässen schreiben</li>
+          </ul>
+        </div>
+
+        <label class="input-label" for="anwendungsfall">Mein Anwendungsfall:</label>
+        <textarea
+          class="input-area"
+          id="anwendungsfall"
+          placeholder="z. B. Ich brauche regelmäßig differenzierte Aufgaben zu neuen Themen. Ich möchte eine Vorlage, die ich für jede Einheit schnell anpassen kann."
+          rows="4"
+        ></textarea>
+
+        <label class="input-label" for="platzhalter" style="margin-top: 1rem;">Welche Teile des Prompts wechseln bei jedem Einsatz? (Platzhalter planen)</label>
+        <textarea
+          class="input-area"
+          id="platzhalter"
+          placeholder="z. B. Das Thema wechselt immer. Die Klasse bleibt gleich. Der Schwierigkeitsgrad variiert manchmal."
+          rows="3"
+        ></textarea>
+
+      </div>
+
+      <!-- Schritt 2: Vorlage bauen (Live-Preview) -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 2: Vorlage mit Live-Vorschau</h3>
+        <p>Fülle die Felder aus. Die Vorschau zeigt dir, wie deine Vorlage aussieht. Platzhalter, die du noch nicht festlegen willst, kannst du in eckige Klammern setzen, z. B. <code>[Thema]</code>.</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label class="input-label" for="t-rolle">Rolle:</label>
+            <input
+              type="text"
+              id="t-rolle"
+              class="input-area template-field"
+              data-field="rolle"
+              style="min-height:auto; padding: 0.6rem 0.8rem; resize:none;"
+              placeholder="z. B. Mathematiklehrerin an einem Gymnasium"
+            >
+          </div>
+          <div>
+            <label class="input-label" for="t-format">Format:</label>
+            <input
+              type="text"
+              id="t-format"
+              class="input-area template-field"
+              data-field="format"
+              style="min-height:auto; padding: 0.6rem 0.8rem; resize:none;"
+              placeholder="z. B. nummerierte Liste, drei Absätze …"
+            >
+          </div>
+        </div>
+
+        <label class="input-label" for="t-aufgabe">Aufgabe:</label>
+        <textarea
+          class="input-area template-field"
+          id="t-aufgabe"
+          data-field="aufgabe"
+          rows="2"
+          placeholder="z. B. Erstelle [Anzahl] differenzierte Aufgaben zum Thema [Thema]."
+        ></textarea>
+
+        <label class="input-label" for="t-kontext" style="margin-top: 1rem;">Kontext:</label>
+        <textarea
+          class="input-area template-field"
+          id="t-kontext"
+          data-field="kontext"
+          rows="3"
+          placeholder="z. B. Klasse [Klasse] an [Schulform]. Die Schüler:innen kennen [Vorwissen]. Zeitrahmen: [Zeit]."
+        ></textarea>
+
+        <label class="input-label" for="t-einschr" style="margin-top: 1rem;">Einschränkung:</label>
+        <textarea
+          class="input-area template-field"
+          id="t-einschr"
+          data-field="einschr"
+          rows="2"
+          placeholder="z. B. Keine Fachbegriffe ohne Erklärung. Nur Alltagsbeispiele."
+        ></textarea>
+
+        <h4 style="margin-top: 1.5rem;">Live-Vorschau deiner Vorlage:</h4>
+        <div class="prompt-block" id="template-preview" style="min-height: 4rem;">
+          <em style="color: var(--gray-500);">Fülle die Felder aus, um die Vorschau zu sehen …</em>
+        </div>
+
+      </div>
+
+      <!-- Schritt 3: Platzhalter dokumentieren -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 3: Platzhalter-Tabelle</h3>
+        <p>Dokumentiere, welche Platzhalter in deiner Vorlage stehen und welche Werte du dafür typischerweise einsetzen wirst.</p>
+
+        <label class="input-label" for="platzhalter-tabelle">Platzhalter und typische Werte:</label>
+        <textarea
+          class="input-area"
+          id="platzhalter-tabelle"
+          rows="6"
+          placeholder="[Thema] → z. B. Bruchrechnung, Fotosynthese, Kaiserzeit
+[Klasse] → z. B. 7a, 9b
+[Vorwissen] → das, was die Klasse gerade behandelt hat
+[Anzahl] → meistens 3–5
+[Zeit] → 45 oder 90 Minuten"
+        ></textarea>
+
+      </div>
+
+      <!-- Schritt 4: Fertige Vorlage -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 4: Meine fertige Vorlage</h3>
+        <p>Schreibe hier deine endgültige, kompakte Vorlage auf. Platzhalter in <code>[eckige Klammern]</code> einsetzen.</p>
+
+        <label class="input-label" for="fertige-vorlage">Meine fertige Prompt-Vorlage:</label>
+        <textarea
+          class="input-area"
+          id="fertige-vorlage"
+          rows="10"
+          data-maxlength="1200"
+          placeholder="Du bist [Rolle]. Erstelle [Aufgabe] zum Thema [Thema] für [Klasse] an [Schulform]. Die Schüler:innen kennen [Vorwissen]. Zeitrahmen: [Zeit]. Format: [Format]. Bitte vermeide [Einschränkung]."
+        ></textarea>
+
+        <div class="info-box info-box--yellow" style="margin-top: 1rem;">
+          <div class="info-box__title">Speichertipp</div>
+          <p>Deine Vorlage wird automatisch in deinem Browser gespeichert. Für die langfristige Nutzung empfehlen wir, sie zusätzlich in ein Textdokument oder in die Notiz-App deines Geräts zu kopieren.</p>
+        </div>
+
+      </div>
+
+      <!-- Schritt 5: Erste Erprobung planen -->
+      <div class="content-card content-card--auf">
+        <h3>Schritt 5: Nächste Schritte planen</h3>
+
+        <label class="input-label" for="wann-einsatz">Wann wirst du diese Vorlage das erste Mal einsetzen?</label>
+        <textarea
+          class="input-area"
+          id="wann-einsatz"
+          rows="2"
+          placeholder="z. B. Nächste Woche in der 9. Stunde, Thema: …"
+        ></textarea>
+
+        <label class="input-label" for="was-beobachten" style="margin-top: 1rem;">Was möchtest du beim ersten Einsatz beobachten / prüfen?</label>
+        <textarea
+          class="input-area"
+          id="was-beobachten"
+          rows="3"
+          placeholder="z. B. Ist das Ergebnis sofort verwendbar? Muss ich viel nacharbeiten? Sind die Platzhalter sinnvoll gewählt?"
+        ></textarea>
+
+        <label class="input-label" for="nach-erprobung" style="margin-top: 1rem;">Nach der Erprobung: Was werde ich an der Vorlage anpassen?</label>
+        <textarea
+          class="input-area"
+          id="nach-erprobung"
+          rows="3"
+          placeholder="Wird nach dem ersten Einsatz ergänzt …"
+        ></textarea>
+
+      </div>
+
+      <!-- Abschluss -->
+      <div class="content-card content-card--auf">
+        <h3>Herzlichen Glückwunsch – du hast alle 6 Aufgaben abgeschlossen!</h3>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Was du gelernt hast</div>
+          <ul>
+            <li><strong>Aufgabe 1:</strong> Prompts analysieren und nach Qualitätskriterien bewerten</li>
+            <li><strong>Aufgabe 2:</strong> Schwache Prompts systematisch verbessern</li>
+            <li><strong>Aufgabe 3:</strong> Einen eigenen Prompt für eine echte Unterrichtssituation schreiben</li>
+            <li><strong>Aufgabe 4:</strong> Prompts nach festen Kriterien reviewen und konstruktives Feedback geben</li>
+            <li><strong>Aufgabe 5:</strong> KI-Einsatz pädagogisch einschätzen und eine eigene begründete Haltung entwickeln</li>
+            <li><strong>Aufgabe 6:</strong> Eine wiederverwendbare Prompt-Vorlage für den eigenen Unterricht entwickeln</li>
+          </ul>
+        </div>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Weiterführende Ressourcen</div>
+          <ul>
+            <li>Nutze die <a href="../referenz/beispiele.html">Beispielsammlung</a> als Inspiration für weitere Prompts</li>
+            <li>Die <a href="../referenz/tipps.html">Tipps &amp; Fehler</a>-Seite ist ein gutes Nachschlagewerk für die Praxis</li>
+            <li>Teile deine Vorlage im Kollegium – gemeinsame Prompt-Bibliotheken sparen allen Zeit</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="aufgabe-5.html">← Aufgabe 5</a>
+        <a class="btn btn--primary-ref" href="../index.html">Zur Startseite</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

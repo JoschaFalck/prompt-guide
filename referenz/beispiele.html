@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beispielsammlung – Referenz</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref nav-btn--active" href="was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--ref">
+        <p class="page-header__label">Referenz</p>
+        <h1>Beispielsammlung</h1>
+        <p class="page-header__subtitle">Fertige Prompts für echte Unterrichtssituationen – nach Fach oder Situation filterbar</p>
+      </header>
+
+      <nav class="section-nav section-nav--ref" aria-label="Referenz-Navigation">
+        <h3>Referenzbereich</h3>
+        <ul class="section-nav__links">
+          <li><a href="was-ist-ein-prompt.html">Was ist ein Prompt?</a></li>
+          <li><a href="prompt-anatomie.html">Prompt-Anatomie</a></li>
+          <li><a href="prompt-arten.html">Prompt-Arten</a></li>
+          <li><a href="beispiele.html" class="active">Beispielsammlung</a></li>
+          <li><a href="tipps.html">Tipps &amp; Fehler</a></li>
+        </ul>
+      </nav>
+
+      <!-- Filter-Leiste -->
+      <div class="content-card content-card--ref" style="margin-bottom: 1rem;">
+        <div class="filter-bar" role="group" aria-label="Beispiele filtern">
+          <span class="filter-bar__label">Filtern nach:</span>
+          <button class="filter-btn active" data-filter="alle">Alle</button>
+          <button class="filter-btn" data-filter="deutsch">Deutsch</button>
+          <button class="filter-btn" data-filter="mathe">Mathematik</button>
+          <button class="filter-btn" data-filter="bio">Biologie</button>
+          <button class="filter-btn" data-filter="geschichte">Geschichte</button>
+          <button class="filter-btn" data-filter="englisch">Englisch</button>
+          <button class="filter-btn" data-filter="differenzierung">Differenzierung</button>
+          <button class="filter-btn" data-filter="feedback">Feedback</button>
+          <button class="filter-btn" data-filter="planung">Unterrichtsplanung</button>
+        </div>
+        <p id="filter-count" style="font-size:0.85rem; color: var(--gray-500); margin-top: 0.5rem;">16 Beispiele gefunden</p>
+      </div>
+
+      <!-- ====================================================
+           BEISPIEL-KARTEN
+           ==================================================== -->
+
+      <!-- 1 -->
+      <div class="example-card" data-fach="deutsch" data-stufe="sek1" data-typ="feedback">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Deutsch</span>
+          <span class="tag tag--stufe">Klasse 8</span>
+          <span class="tag tag--typ">Feedback</span>
+          <span class="example-card__title">Schreibfeedback: Argumentativer Brief</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Schülerinnen und Schüler haben argumentative Briefe verfasst; Lehrkraft möchte strukturiertes Feedback generieren.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist ein erfahrener Schreibcoach für Jugendliche.</span> <span class="mark-aufgabe">Gib konstruktives Feedback zu folgendem Schülerbrief.</span> <span class="mark-kontext">Der Brief wurde von einer Achtklässlerin geschrieben. Das Schreibziel war ein argumentativer Brief an die Schulleitung mit drei Argumenten. [Brief hier einfügen]</span> <span class="mark-format">Nenne: 1. Zwei konkrete Stärken (was funktioniert gut und warum). 2. Zwei Verbesserungsvorschläge mit konkretem Formulierungsbeispiel. 3. Eine Frage, die zum Weiterdenken anregt.</span> <span class="mark-einschr">Kein Benotungsvorschlag. Keine herablassenden Formulierungen. Sprich die Schülerin direkt an.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="example-card" data-fach="deutsch" data-stufe="sek1" data-typ="differenzierung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Deutsch</span>
+          <span class="tag tag--stufe">Klasse 6</span>
+          <span class="tag tag--typ">Differenzierung / DaZ</span>
+          <span class="example-card__title">Text vereinfachen für DaZ-Lernende</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte einen Sachtext für mehrere Schüler:innen mit Deutsch als Zweitsprache zugänglich machen.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Fachlehrkraft für Deutsch als Zweitsprache (DaZ).</span> <span class="mark-aufgabe">Vereinfache den folgenden Text für DaZ-Lernende auf Niveau A2/B1.</span> <span class="mark-kontext">[Originaltext einfügen]. Die Schüler:innen sind 11–12 Jahre alt und lernen seit ca. 2 Jahren Deutsch.</span> <span class="mark-format">Behalte den wesentlichen Inhalt und die Gliederung bei. Verwende kurze Sätze (max. 15 Wörter), erkläre Schlüsselbegriffe in Klammern (Beispiel: Photosynthese – das bedeutet: Pflanzen machen aus Licht Energie).</span> <span class="mark-einschr">Behalte Eigennamen und Fachbegriffe bei, aber erkläre sie. Keine Kindersprache – die Schüler:innen sind 12, nicht 6.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="example-card" data-fach="mathe" data-stufe="sek1" data-typ="differenzierung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Mathematik</span>
+          <span class="tag tag--stufe">Klasse 7</span>
+          <span class="tag tag--typ">Aufgabenerstellung / Differenzierung</span>
+          <span class="example-card__title">Differenzierte Aufgaben zur Prozentrechnung</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft braucht drei Schwierigkeitsstufen für eine gemischte Lerngruppe.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Mathematiklehrkraft an einer Realschule.</span> <span class="mark-aufgabe">Erstelle je zwei Aufgaben für drei Schwierigkeitsstufen zum Thema Prozentrechnung.</span> <span class="mark-kontext">Klasse 7, Thema: Prozente im Alltag (Rabatte, MwSt.). Stufe 1: ein Rechenschritt, direkte Angabe aller Werte. Stufe 2: zwei Schritte, Werte müssen aus dem Text herausgelesen werden. Stufe 3: Mehrschrittaufgabe mit einer kurzen Begründung der Lösung.</span> <span class="mark-format">Nummeriere die Aufgaben 1a, 1b / 2a, 2b / 3a, 3b. Kennzeichne jede Stufe mit einem Symbol: ▸ / ▸▸ / ▸▸▸. Alle Aufgaben sollen Alltagssituationen verwenden.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="example-card" data-fach="mathe" data-stufe="sek2" data-typ="erklaerung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Mathematik</span>
+          <span class="tag tag--stufe">Klasse 9/10</span>
+          <span class="tag tag--typ">Erklärung / Chain-of-Thought</span>
+          <span class="example-card__title">Quadratische Gleichungen – Schritt für Schritt</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte eine mustergültige Schritt-für-Schritt-Lösung als Referenz erstellen.</p>
+          <div class="prompt-block">
+            <span class="mark-aufgabe">Löse folgende quadratische Gleichung vollständig und erkläre jeden einzelnen Schritt so, dass eine Neuntklässlerin, die das Thema heute zum ersten Mal sieht, es versteht:</span> <span class="mark-kontext">x² + 5x + 6 = 0. Die Schülerin kennt das Lösen linearer Gleichungen, aber noch nicht die p-q-Formel.</span> <span class="mark-format">Strukturiere die Lösung in nummerierte Schritte. Nach jedem Schritt: ein Satz Erklärung in Alltagssprache. Am Ende: eine kurze Merkregel in einem Kasten.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="example-card" data-fach="bio" data-stufe="sek1" data-typ="material">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Biologie</span>
+          <span class="tag tag--stufe">Klasse 7</span>
+          <span class="tag tag--typ">Unterrichtsmaterial</span>
+          <span class="example-card__title">Lückentext Fotosynthese</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft braucht ein Sicherungsarbeitsblatt zur Fotosynthese.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Biologielehrerin an einem Gymnasium.</span> <span class="mark-aufgabe">Erstelle einen Lückentext zur Fotosynthese.</span> <span class="mark-kontext">Klasse 7, einführende Behandlung. Bekannte Begriffe: Chlorophyll, Licht, Sauerstoff. Noch nicht bekannt: Calvin-Zyklus, Lichtreaktion, ATP.</span> <span class="mark-format">10–12 Lücken, Lösungskasten am Ende. Einfache Satzstruktur. Zwei Schwierigkeitsstufen: einmal mit und einmal ohne Lösungskasten (als Variante B).</span> <span class="mark-einschr">Keine Begriffe über das bekannte Vorwissen hinaus. Keine Sätze mit mehr als zwei Teilsätzen.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="example-card" data-fach="bio" data-stufe="sek1" data-typ="differenzierung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Biologie</span>
+          <span class="tag tag--stufe">Klasse 5/6</span>
+          <span class="tag tag--typ">Inklusion / Förderbedarf</span>
+          <span class="example-card__title">Tiertext für Schüler mit Förderbedarf Lesen</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Integrationsklasse – Lehrkraft braucht eine barrierearmere Version eines Sachtexts über Wölfe.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Lehrkraft für Sonderpädagogik mit Schwerpunkt Lesen.</span> <span class="mark-aufgabe">Schreibe einen kurzen Sachtext über Wölfe speziell für Schüler:innen mit Förderbedarf im Bereich Lesen und Schreiben.</span> <span class="mark-kontext">Klasse 5, Integrationsklasse. Die Schüler:innen haben Probleme mit längeren Texten und Fremdwörtern.</span> <span class="mark-format">Maximal 150 Wörter. Schreibe jeden Gedanken als eigenen Satz. Verwende ausschließlich häufige Wörter. Drei Abschnitte: Wie sieht ein Wolf aus? Wo lebt ein Wolf? Was frisst ein Wolf?</span> <span class="mark-einschr">Keine Metaphern, keine Passivkonstruktionen, keine mehrteiligen Sätze.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="example-card" data-fach="geschichte" data-stufe="sek1" data-typ="material">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Geschichte</span>
+          <span class="tag tag--stufe">Klasse 9</span>
+          <span class="tag tag--typ">Quellenarbeit / Material</span>
+          <span class="example-card__title">Quellenanalyse-Fragen zu einem NS-Dokument</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte Analyseaufgaben zu einem historischen Dokument entwickeln (ohne das Dokument selbst bei der KI einzugeben).</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Geschichtslehrerin mit Expertise in historischer Quellenarbeit.</span> <span class="mark-aufgabe">Entwickle fünf Quellenanalysefragen für ein Propagandaplakat aus der NS-Zeit.</span> <span class="mark-kontext">Klasse 9, das Plakat zeigt Bilder und Schlagwörter, die Ideologie und Feindbilder vermitteln. Schüler:innen haben bereits die Grundschritte der Quellenanalyse (Autor, Entstehungszeit, Adressat, Intention) gelernt.</span> <span class="mark-format">Die Fragen sollen aufeinander aufbauen: Analyse → Deutung → Bewertung. Bloom-Stufen angeben. Operatoren verwenden.</span> <span class="mark-einschr">Keine vereinfachenden Urteile. Fragen sollen zum kritischen Denken anregen, nicht zu vorgefertigten Antworten führen.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="example-card" data-fach="geschichte" data-stufe="sek1,sek2" data-typ="diskussion">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Geschichte / Politik</span>
+          <span class="tag tag--stufe">Klasse 9–12</span>
+          <span class="tag tag--typ">Diskussionsimpuls</span>
+          <span class="example-card__title">Pro-Kontra-Argumente zu einer historischen Entscheidung</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte eine Podiumsdiskussion vorbereiten über die Entscheidung der Alliierten, nach dem Zweiten Weltkrieg Deutschland zu teilen.</p>
+          <div class="prompt-block">
+            <span class="mark-aufgabe">Erstelle ein strukturiertes Pro-Kontra-Blatt zu folgender Frage: „War die Teilung Deutschlands nach 1945 die richtige Entscheidung?"</span> <span class="mark-kontext">Für eine Podiumsdiskussion in Klasse 10. Schüler:innen schlüpfen in Rollen von Vertretern verschiedener Mächte (USA, UdSSR, Großbritannien, Frankreich, deutsche Bevölkerung).</span> <span class="mark-format">Pro- und Kontra-Argumente je Perspektive, je 2–3 Argumente. Tabelle mit fünf Spalten (eine pro Perspektive). Quellenhinweise für weiterführende Recherche.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="example-card" data-fach="englisch" data-stufe="sek1" data-typ="material">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Englisch</span>
+          <span class="tag tag--stufe">Klasse 7/8</span>
+          <span class="tag tag--typ">Vokabelarbeit / Material</span>
+          <span class="example-card__title">Vokabelübungen mit Kontextsätzen</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte kontextreiche Vokabelübungen statt simpler Wort-Übersetzungs-Listen.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Englischlehrerin mit dem Schwerpunkt kommunikativer Ansatz.</span> <span class="mark-aufgabe">Erstelle ein Vokabelübungsblatt für folgende 10 Wörter: [Wortliste einfügen].</span> <span class="mark-kontext">Klasse 7 (Niveau ca. A2–B1). Das Thema der aktuellen Unit ist „Reisen und Ferien".</span> <span class="mark-format">Für jedes Wort: 1. Ein Beispielsatz im Kontext Reisen (auf Englisch). 2. Eine Lückenaufgabe, in die das Wort eingesetzt werden muss. 3. Eine Übersetzung ins Deutsche in Klammern.</span> <span class="mark-einschr">Keine ungebräuchlichen idiomatischen Wendungen. Sätze nicht länger als 12 Wörter.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="example-card" data-fach="englisch" data-stufe="sek2" data-typ="schreiben">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Englisch</span>
+          <span class="tag tag--stufe">Klasse 10–12</span>
+          <span class="tag tag--typ">Schreibaufgabe / Prüfungsvorbereitung</span>
+          <span class="example-card__title">Essay-Aufgabenstellungen für das Abitur</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte abiturähnliche Schreibaufgaben zu einem gelesenen Text entwickeln.</p>
+          <div class="prompt-block">
+            <span class="mark-aufgabe">Entwickle drei abiturähnliche Essay-Aufgabenstellungen zu folgendem Text: [Textausschnitt einfügen].</span> <span class="mark-kontext">Bayerischer Lehrplan Gymnasium, Jahrgangsstufe 11. Die Schüler:innen haben den Text als Hausaufgabe gelesen. Thema des Textes: soziale Medien und Identitätsfindung bei Jugendlichen.</span> <span class="mark-format">Aufgabe 1: Analyse (mit Operator „Analyse how …"). Aufgabe 2: Kommentar (Comment on …). Aufgabe 3: Creative writing (Write a … from the perspective of …). Für jede Aufgabe: Erwarteter Umfang in Wörtern und Zeitvorgabe.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="example-card" data-fach="deutsch" data-stufe="sek1" data-typ="planung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Deutsch</span>
+          <span class="tag tag--stufe">Klasse 6</span>
+          <span class="tag tag--typ">Unterrichtsplanung</span>
+          <span class="example-card__title">Stundenplanung: Einführung Gedichtanalyse</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft plant eine Doppelstunde zur Einführung in die Gedichtanalyse.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist erfahrene Deutschdidaktikerin.</span> <span class="mark-aufgabe">Erstelle eine Grobplanung für eine 90-Minuten-Doppelstunde zur Einführung der Gedichtanalyse.</span> <span class="mark-kontext">Klasse 6, Gymnasium. Die Schüler:innen kennen Gedichte aus dem Deutschbuch, haben aber noch nie formale Analysekriterien gelernt. Lernziel: Schüler:innen können ein Gedicht mithilfe der Kriterien Reimschema, Rhythmus und Strophenstruktur beschreiben.</span> <span class="mark-format">Tabellarische Gliederung: Zeit, Phase (z. B. Einstieg), Lehreraktivität, Schüleraktivität, Material/Methode. Puffer für Diskussionen einplanen.</span> <span class="mark-einschr">Keine Frontalvorlesung über 20 Minuten. Aktivierende Elemente in jeder Phase.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="example-card" data-fach="alle" data-stufe="alle" data-typ="planung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Fächerübergreifend</span>
+          <span class="tag tag--typ">Unterrichtsplanung / Reflexion</span>
+          <span class="example-card__title">Unterrichtsreflexion nach Stunde</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft möchte eine Unterrichtsstunde strukturiert reflektieren und Verbesserungen ableiten.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist ein erfahrener Schulberater mit Fokus auf Unterrichtsentwicklung.</span> <span class="mark-aufgabe">Hilf mir, meine Unterrichtsstunde zu reflektieren.</span> <span class="mark-kontext">Stunde: Einführung in Bruchrechnung, Klasse 6. Geplante Methode: Partnerarbeit mit Materialien. Was gut lief: Die Partnerarbeit funktionierte gut. Was nicht lief: Einige Schüler:innen haben das Konzept „Zähler/Nenner" noch nicht verstanden, obwohl ich es erklärt hatte.</span> <span class="mark-format">Analysiere in drei Punkten: Was könnte der Grund für die Verstehensprobleme sein? Zwei alternative Erklärungsansätze für die nächste Stunde. Eine Aufgabe zum formativen Assessment am Stundenende.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="example-card" data-fach="alle" data-stufe="alle" data-typ="differenzierung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Fächerübergreifend</span>
+          <span class="tag tag--typ">Differenzierung</span>
+          <span class="example-card__title">Aufgabe in drei Niveaus differenzieren</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft hat eine Aufgabe, die sie in drei Schwierigkeitsstufen anbieten möchte.</p>
+          <div class="prompt-block">
+            <span class="mark-aufgabe">Differenziere folgende Aufgabe in drei Niveaustufen (Grundniveau, Mittelniveau, erweitertes Niveau):</span> <span class="mark-kontext">[Originalaufgabe einfügen]. Zielgruppe: [Klassenstufe und Schulform]. Inhaltlicher Schwerpunkt: [Thema]. Alle Schüler:innen sollen mit derselben Kernfrage arbeiten, der Zugang und die Komplexität sollen sich unterscheiden.</span> <span class="mark-format">Für jede Stufe: die überarbeitete Aufgabenstellung, eine kurze Begründung, was sich ändert und warum. Optional: Hilfsmittel für Grundniveau (z. B. Wortgerüst, Strukturhilfe).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="example-card" data-fach="alle" data-stufe="alle" data-typ="feedback">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Fächerübergreifend</span>
+          <span class="tag tag--typ">Elternkommunikation</span>
+          <span class="example-card__title">Elternbrief freundlich formulieren</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft muss eine schwierige Nachricht (schlechte Leistungen) an Eltern kommunizieren.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist eine erfahrene Lehrkraft mit Stärken in der Elternkommunikation.</span> <span class="mark-aufgabe">Schreibe einen Elternbrief, der über Lernschwierigkeiten informiert und zu einem Gespräch einlädt.</span> <span class="mark-kontext">Der Schüler hat in den letzten Wochen zunehmend Schwierigkeiten in Mathematik. Die Eltern sind bisher nicht informiert. Das Verhältnis ist gut, aber die Eltern neigen dazu, defensiv zu reagieren.</span> <span class="mark-format">Ca. 200 Wörter. Ton: wertschätzend, lösungsorientiert, nicht klagend. Kein Vorwurf. Am Ende: konkreter Terminvorschlag.</span> <span class="mark-einschr">Keine Floskeln wie „Ihr Kind ist leider …". Keine Übertreibungen.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="example-card" data-fach="mathe" data-stufe="grundschule" data-typ="material">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Mathematik</span>
+          <span class="tag tag--stufe">Klasse 3/4</span>
+          <span class="tag tag--typ">Grundschule / Material</span>
+          <span class="example-card__title">Sachaufgaben mit Alltagsbezug (Grundschule)</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Grundschullehrkraft sucht motivierende Sachaufgaben zum kleinen Einmaleins.</p>
+          <div class="prompt-block">
+            <span class="mark-rolle">Du bist Grundschullehrerin mit viel Erfahrung in der Gestaltung motivierender Mathematikaufgaben.</span> <span class="mark-aufgabe">Schreibe 6 Sachaufgaben zum kleinen Einmaleins.</span> <span class="mark-kontext">Klasse 3. Die Kinder üben gerade die 4er- und 6er-Reihe. Aufgaben sollen aus dem Lebensalltag von 9-Jährigen stammen (Schule, Sport, Tiere, Familie).</span> <span class="mark-format">Jede Aufgabe: 2–3 Sätze, maximal 30 Wörter. Gefragt wird immer nach einer Multiplikation. Keine Division. Je drei Aufgaben pro Reihe (4er und 6er).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="example-card" data-fach="alle" data-stufe="alle" data-typ="planung">
+        <div class="example-card__header">
+          <span class="tag tag--fach">Fächerübergreifend</span>
+          <span class="tag tag--typ">Prüfungsvorbereitung / Material</span>
+          <span class="example-card__title">Erwartungshorizont für eine Klassenarbeit</span>
+        </div>
+        <div class="example-card__body">
+          <p><em>Situation:</em> Lehrkraft hat eine Klassenarbeit erstellt und braucht einen Erwartungshorizont.</p>
+          <div class="prompt-block">
+            <span class="mark-aufgabe">Erstelle einen Erwartungshorizont für folgende Klassenarbeit:</span> <span class="mark-kontext">[Klassenarbeit einfügen]. Fach: [Fach], Klasse: [Klasse], Schulform: [Schulform]. Die Aufgaben sind nach Bewertungspunkten gewichtet (stehen in der Klassenarbeit).</span> <span class="mark-format">Für jede Aufgabe: Musterlösung, Bewertungshinweise (was muss genannt werden, was ist optional), Typische Schülerfehler mit kurzer Erklärung, warum dieser Fehler entsteht.</span> <span class="mark-einschr">Keine perfekten Mustertexte – formuliere pragmatisch, was Punkte gibt und was nicht.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="prompt-arten.html">← Prompt-Arten</a>
+        <a class="btn btn--primary-ref" href="tipps.html">Weiter: Tipps &amp; Fehler →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

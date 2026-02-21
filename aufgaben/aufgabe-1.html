@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 1: Analyse – Aufgaben</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Referenz</a>
+        <a class="nav-btn nav-btn--auf nav-btn--active" href="aufgabe-1.html">✏️ Aufgaben</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--auf">
+        <p class="page-header__label">Aufgabenbereich</p>
+        <h1>Aufgabe 1: Analyse</h1>
+        <p class="page-header__subtitle">Prompts bewerten und begründen – was fehlt, was funktioniert?</p>
+      </header>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-bar-container" role="navigation" aria-label="Aufgaben-Fortschritt">
+        <div class="progress-bar-container__label">
+          <span>Aufgabe 1 von 6</span>
+          <span>17 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" style="width: 17%;"></div>
+        </div>
+        <ol class="progress-steps" aria-label="Aufgabenübersicht">
+          <li class="current"><a href="aufgabe-1.html" aria-current="page">1</a></li>
+          <li><a href="aufgabe-2.html">2</a></li>
+          <li><a href="aufgabe-3.html">3</a></li>
+          <li><a href="aufgabe-4.html">4</a></li>
+          <li><a href="aufgabe-5.html">5</a></li>
+          <li><a href="aufgabe-6.html">6</a></li>
+        </ol>
+      </div>
+
+      <!-- Aufgaben-Navigation -->
+      <nav class="section-nav section-nav--auf" aria-label="Aufgaben-Navigation">
+        <h3>Aufgaben</h3>
+        <ul class="section-nav__links">
+          <li><a href="aufgabe-1.html" class="active">1 – Analyse</a></li>
+          <li><a href="aufgabe-2.html">2 – Rekonstruktion</a></li>
+          <li><a href="aufgabe-3.html">3 – Transfer</a></li>
+          <li><a href="aufgabe-4.html">4 – Peer-Review</a></li>
+          <li><a href="aufgabe-5.html">5 – Reflexion</a></li>
+          <li><a href="aufgabe-6.html">6 – Entwicklung</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aufgabenbeschreibung -->
+      <div class="content-card content-card--auf">
+
+        <div class="task-header">
+          <div class="task-number" aria-hidden="true">1</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Prompts analysieren und bewerten</h2>
+            <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom:0;">Bloom-Stufen 2 (Verstehen) und 4 (Analysieren)</p>
+          </div>
+        </div>
+
+        <div class="task-instruction">
+          <div class="task-instruction__label">Aufgabe</div>
+          <p>Unten findest du drei Prompts zu derselben Unterrichtssituation. Analysiere jeden Prompt nach den vier Bewertungskriterien und schreibe deine Einschätzung in das Textfeld. Beantworte danach die Reflexionsfrage.</p>
+        </div>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Unterrichtssituation</div>
+          <p>Eine Lehrkraft möchte mithilfe von KI ein <strong>Arbeitsblatt zur Karikaturanalyse</strong> erstellen. Die Klasse ist eine 9. Klasse an einem Gymnasium und hat Karikaturen noch nie systematisch analysiert. Das Arbeitsblatt soll in der nächsten Stunde eingesetzt werden.</p>
+        </div>
+
+      </div>
+
+      <!-- Bewertungskriterien -->
+      <div class="content-card content-card--auf">
+        <h3>Bewertungskriterien</h3>
+        <p>Bewertet werden die vier Qualitätsmerkmale eines Prompts:</p>
+        <div class="criteria-grid">
+          <div class="criterion-card">
+            <div class="criterion-card__title">Klarheit</div>
+            <div class="criterion-card__desc">Ist die Aufgabe eindeutig formuliert? Gibt es keine Mehrdeutigkeiten?</div>
+          </div>
+          <div class="criterion-card">
+            <div class="criterion-card__title">Vollständigkeit</div>
+            <div class="criterion-card__desc">Sind alle nötigen Informationen enthalten (Zielgruppe, Zweck)?</div>
+          </div>
+          <div class="criterion-card">
+            <div class="criterion-card__title">Spezifität</div>
+            <div class="criterion-card__desc">Sind Format, Länge, Tonalität und Anforderungen konkret?</div>
+          </div>
+          <div class="criterion-card">
+            <div class="criterion-card__title">Realismus</div>
+            <div class="criterion-card__desc">Ist die Aufgabe für eine KI realistisch umsetzbar?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prompt A -->
+      <div class="content-card content-card--auf" id="task1-form">
+        <h3>Prompt A</h3>
+        <div class="prompt-block">
+          Mach mir ein Arbeitsblatt.
+        </div>
+
+        <label class="input-label" for="analyse-a">Deine Analyse zu Prompt A:</label>
+        <textarea
+          class="input-area"
+          id="analyse-a"
+          name="analyse-a"
+          placeholder="Was fehlt? Was ist unklar? Welche Kriterien werden nicht erfüllt? Wie könnte man den Prompt verbessern?"
+          data-maxlength="500"
+          rows="4"
+        ></textarea>
+
+        <!-- Prompt B -->
+        <h3 style="margin-top: 2rem;">Prompt B</h3>
+        <div class="prompt-block">
+          Erstelle ein Arbeitsblatt zur Karikaturanalyse für meine Klasse.
+        </div>
+
+        <label class="input-label" for="analyse-b">Deine Analyse zu Prompt B:</label>
+        <textarea
+          class="input-area"
+          id="analyse-b"
+          name="analyse-b"
+          placeholder="Wo gibt es Verbesserungspotenzial? Was fehlt noch? Was ist schon gut?"
+          data-maxlength="500"
+          rows="4"
+        ></textarea>
+
+        <!-- Prompt C -->
+        <h3 style="margin-top: 2rem;">Prompt C</h3>
+        <div class="prompt-block">
+          <span class="mark-rolle">Du bist Geschichtslehrerin an einem Gymnasium.</span> <span class="mark-aufgabe">Erstelle ein strukturiertes Arbeitsblatt zur Einführung der Karikaturanalyse.</span> <span class="mark-kontext">Zielgruppe: 9. Klasse, die Karikaturen noch nie systematisch analysiert hat. Das Arbeitsblatt soll in einer 45-Minuten-Stunde bearbeitbar sein.</span> <span class="mark-format">Aufbau: 1. Kurze Erläuterung: Was ist eine Karikatur? (max. 3 Sätze). 2. Fünf Analyse-Schritte in einer nummerierten Liste. 3. Eine Beispielkarikatur als Übungsaufgabe mit drei Leitfragen. Das Blatt soll auf eine A4-Seite passen.</span> <span class="mark-einschr">Keine fertige Analyse der Karikatur – die Schüler:innen sollen selbst analysieren. Keine Fremdwörter ohne Erklärung.</span>
+        </div>
+
+        <label class="input-label" for="analyse-c">Deine Analyse zu Prompt C:</label>
+        <textarea
+          class="input-area"
+          id="analyse-c"
+          name="analyse-c"
+          placeholder="Was macht diesen Prompt gut? Gibt es noch etwas, das fehlen oder verbessert werden könnte?"
+          data-maxlength="500"
+          rows="4"
+        ></textarea>
+
+        <!-- Reflexionsfrage -->
+        <h3 style="margin-top: 2rem;">Reflexionsfrage</h3>
+        <div class="task-instruction">
+          <div class="task-instruction__label">Frage</div>
+          <p>Welcher der drei Prompts würde deiner Meinung nach das nützlichste Ergebnis liefern – und warum? Ordne die drei Prompts in einer kurzen Begründung.</p>
+        </div>
+
+        <label class="input-label" for="reflexion-1">Deine Antwort:</label>
+        <textarea
+          class="input-area"
+          id="reflexion-1"
+          name="reflexion-1"
+          placeholder="Schreibe deine Begründung hier …"
+          data-maxlength="400"
+          rows="4"
+        ></textarea>
+
+        <div style="margin-top: 1.5rem;">
+          <button class="btn btn--primary-auf" id="task1-submit" type="button">Analysen abschicken und Hinweise anzeigen</button>
+        </div>
+
+        <div id="task1-feedback" style="margin-top: 1rem;"></div>
+
+      </div>
+
+      <!-- Musterlösung -->
+      <div class="content-card content-card--auf">
+        <h3>Musterlösung / Hinweise</h3>
+        <div class="solution-reveal">
+          <button class="solution-reveal__btn" type="button">▸ Musterlösung / Hinweise anzeigen</button>
+          <div class="solution-reveal__content">
+            <h4>Prompt A – „Mach mir ein Arbeitsblatt"</h4>
+            <p><strong>Klarheit:</strong> Fehlt vollständig. Was für ein Arbeitsblatt? Zu welchem Thema? <strong>Vollständigkeit:</strong> Keine Zielgruppe, kein Thema, kein Zweck. <strong>Spezifität:</strong> Keine Angaben. <strong>Fazit:</strong> Die KI würde irgendein beliebiges Arbeitsblatt erstellen, das höchstwahrscheinlich nicht verwertbar ist.</p>
+
+            <h4>Prompt B – „Erstelle ein Arbeitsblatt zur Karikaturanalyse für meine Klasse"</h4>
+            <p><strong>Verbesserung gegenüber A:</strong> Thema (Karikaturanalyse) ist klar. <strong>Noch fehlend:</strong> Welche Klasse? Welches Vorwissen? Welches Format? Wie lang? Die KI müsste weiterhin viele Entscheidungen selbst treffen. Das Ergebnis könnte verwendbar sein, aber trifft möglicherweise nicht die Anforderungen.</p>
+
+            <h4>Prompt C – Der vollständige Prompt</h4>
+            <p><strong>Stärken:</strong> Alle fünf Bausteine vorhanden. Die KI bekommt: Rolle (Geschichtslehrerin), Aufgabe (Arbeitsblatt zur Einführung), Kontext (9. Klasse, kein Vorwissen, Zeitrahmen), Format (detaillierter Aufbau, Längenvorgabe), Einschränkung (keine fertige Analyse). <strong>Das Ergebnis:</strong> Sollte direkt im Unterricht einsetzbar sein.</p>
+
+            <div class="info-box info-box--green">
+              <div class="info-box__title">Kernbotschaft</div>
+              <p>Der Aufwand für einen guten Prompt (Prompt C) beträgt vielleicht 3–5 Minuten mehr als für Prompt A – spart aber Zeit beim Nacharbeiten und liefert ein direkt verwendbares Ergebnis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="task-footer-nav">
+        <div class="placeholder"></div>
+        <a class="btn btn--primary-auf" href="aufgabe-2.html">Weiter: Aufgabe 2 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
