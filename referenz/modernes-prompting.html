@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modernes Prompting – Grundlagen</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref nav-btn--active" href="was-ist-ein-prompt.html">📚 Grundlagen</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Übungen</a>
+        <a class="nav-btn nav-btn--cha" href="../challenges/challenge-1.html">🏆 Challenges</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--ref">
+        <p class="page-header__label">Grundlagen</p>
+        <h1>Modernes Prompting</h1>
+        <p class="page-header__subtitle">Vom starren Schema zum lebendigen Dialog – wie sich Prompting weiterentwickelt hat</p>
+      </header>
+
+      <nav class="section-nav section-nav--ref" aria-label="Grundlagen-Navigation">
+        <h3>Grundlagen</h3>
+        <ul class="section-nav__links">
+          <li><a href="was-ist-ein-prompt.html">Was ist ein Prompt?</a></li>
+          <li><a href="modernes-prompting.html" class="active">Modernes Prompting</a></li>
+          <li><a href="prompt-anatomie.html">Prompt-Anatomie</a></li>
+          <li><a href="prompt-arten.html">Prompt-Arten</a></li>
+          <li><a href="beispiele.html">Beispielsammlung</a></li>
+          <li><a href="tipps.html">Tipps &amp; Fehler</a></li>
+        </ul>
+      </nav>
+
+      <!-- Einstieg -->
+      <div class="content-card content-card--ref">
+        <h2>Prompting war früher anders – und ist heute flexibler</h2>
+
+        <p>Wenn du zum ersten Mal von Prompting hörst, lernst du meistens das Fünf-Bausteine-Modell: Rolle, Aufgabe, Kontext, Format, Einschränkung. Dieses Modell ist hilfreich als <strong>Einstiegshilfe</strong> – aber es beschreibt nicht, wie erfahrene Nutzer:innen heute tatsächlich mit KI arbeiten.</p>
+
+        <p>Die Realität des modernen Promptings ist <strong>dialogisch, iterativ und kooperativ</strong>. Du musst nicht mehr alles beim ersten Versuch perfekt formulieren. Stattdessen entsteht das Ergebnis im Gespräch – durch Ausprobieren, Nachfragen, Verfeinern und gemeinsames Entwickeln.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Der entscheidende Wandel</div>
+          <p>Frühe KI-Systeme brauchten präzise Instruktionen, weil sie wenig Kontext selbst erschließen konnten. Moderne Sprachmodelle (GPT-4, Claude, Gemini) verstehen Absichten, erkennen Zweideutigkeiten und können nachfragen. Das verändert den ganzen Umgang mit Prompts grundlegend.</p>
+        </div>
+      </div>
+
+      <!-- Vom Monolog zum Dialog -->
+      <div class="content-card content-card--ref">
+        <h2>Vom Monolog zum Dialog</h2>
+
+        <p>Das alte Bild: Du formulierst einen langen, perfekten Prompt → die KI gibt ein perfektes Ergebnis zurück. Dieses Bild stimmt nicht mehr.</p>
+
+        <p>Das neue Bild: Du startest mit einer groben Idee → die KI antwortet → du reagierst → gemeinsam entwickelt ihr das Ergebnis. Es ist weniger wie eine Suchmaschine und mehr wie ein Gespräch mit einem kompetenten Gegenüber.</p>
+
+        <div class="info-box info-box--yellow">
+          <div class="info-box__title">Konkret: Wie sieht das in der Praxis aus?</div>
+          <p>Statt einem perfekten Prompt am Anfang kannst du so einsteigen:</p>
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Gesprächseinstieg statt Mega-Prompt</div>
+          Ich bin Deutschlehrerin und suche eine Idee für eine kreative Schreibaufgabe für Klasse 8. Hast du ein paar Vorschläge?
+        </div>
+
+        <p>Die KI macht Vorschläge. Du reagierst:</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Im Dialog weiterentwickeln</div>
+          Der zweite Vorschlag klingt gut. Kannst du dafür konkrete Leitfragen entwickeln? Die Aufgabe soll ca. 20 Minuten dauern und ohne Vorkenntnisse bearbeitbar sein.
+        </div>
+
+        <p>Du hast das Ergebnis schrittweise entwickelt – ohne am Anfang alles wissen zu müssen.</p>
+      </div>
+
+      <!-- Trial and Error -->
+      <div class="content-card content-card--ref">
+        <h2>Trial and Error als Methode</h2>
+
+        <p>Erfahrene Nutzer:innen wissen: Das erste Ergebnis ist ein <strong>Entwurf</strong>, kein Endprodukt. Sie arbeiten bewusst mit Iteration – also dem wiederholten Verfeinern.</p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Durchgang</th>
+                <th>Was du tust</th>
+                <th>Warum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Versuch</strong></td>
+                <td>Groben Prompt senden, Ergebnis lesen</td>
+                <td>Verstehen, was die KI standardmäßig produziert</td>
+              </tr>
+              <tr>
+                <td><strong>2. Versuch</strong></td>
+                <td>Gezielt nachschärfen: Format, Tonalität, Fokus</td>
+                <td>Das Ergebnis an die eigenen Bedürfnisse angleichen</td>
+              </tr>
+              <tr>
+                <td><strong>3. Versuch</strong></td>
+                <td>Einzelne Teile anpassen oder ersetzen</td>
+                <td>Feinschliff – aus 80 % wird 95 %</td>
+              </tr>
+              <tr>
+                <td><strong>Speichern</strong></td>
+                <td>Den finalen Prompt archivieren</td>
+                <td>Für nächstes Mal nicht von vorne anfangen</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Wichtig: Perfektion ist nicht das Ziel</div>
+          <p>Ein Prompt, der nach zwei Iterationen ein verwendbares Ergebnis liefert, ist besser als einer, an dem du 20 Minuten schreibst. Schnell starten, schnell anpassen – das ist modernes Prompting.</p>
+        </div>
+      </div>
+
+      <!-- Gemeinsam Ziele entwickeln -->
+      <div class="content-card content-card--ref">
+        <h2>Gemeinsam mit der KI Ziele und Lösungswege entwickeln</h2>
+
+        <p>Eine unterschätzte Nutzungsform: Du weißt noch nicht genau, was du willst – und nutzt die KI als <strong>Denkpartner</strong>, um das herauszufinden.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Beispiel: Ziel erst im Dialog klären</div>
+          Ich möchte meinen Schüler:innen das Konzept der Demokratie nahebringen – aber auf eine Art, die nicht trocken ist. Ich bin mir noch nicht sicher, wie. Was wären Ansätze, die du für Klasse 7 sinnvoll findest?
+        </div>
+
+        <p>Die KI schlägt mehrere Ansätze vor. Du wählst einen aus und verfeinert ihn gemeinsam weiter – bis du weißt, was du wirklich willst.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Die KI als Sparringspartner</div>
+          <p>Du kannst die KI bitten, dich zu hinterfragen: „Stelle mir Rückfragen, bis wir gemeinsam geklärt haben, was genau ich brauche." Das ist besonders nützlich bei komplexen Unterrichtsplanungen, bei denen du selbst noch im Klaren bist, was das Ziel sein soll.</p>
+        </div>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Rückfragen-Prompt</div>
+          Ich möchte eine Unterrichtsstunde planen. Stelle mir zuerst fünf Fragen, um mein Vorhaben besser zu verstehen – bevor du anfängst, etwas vorzuschlagen.
+        </div>
+      </div>
+
+      <!-- Reverse Prompting -->
+      <div class="content-card content-card--ref">
+        <h2>Reverse Prompting – vom Ergebnis zurück zum Prompt</h2>
+
+        <p>Reverse Prompting ist eine fortgeschrittene Technik: Du zeigst der KI ein <strong>Ergebnis, das dir gefällt</strong>, und bittest sie, den Prompt zu rekonstruieren, mit dem dieses Ergebnis entstanden sein könnte. Oder du lässt sie einen optimierten Prompt für dich schreiben.</p>
+
+        <h3>Variante A: Prompt aus Beispiel ableiten</h3>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Reverse-Prompt-Anfrage</div>
+          Hier ist ein Arbeitsblatt, das mir gut gefällt: [Arbeitsblatt einfügen]. Schreibe mir den Prompt, mit dem ich ein ähnliches Arbeitsblatt für ein anderes Thema erzeugen kann.
+        </div>
+
+        <p>Die KI analysiert das Beispiel und gibt dir einen wiederverwendbaren Prompt zurück. Praktisch: Du musst den Prompt nie selbst formulieren – du zeigst, was du willst.</p>
+
+        <h3>Variante B: KI schreibt den Prompt für dich</h3>
+
+        <div class="prompt-block">
+          <div class="prompt-block__label">Meta-Prompt</div>
+          Schreibe mir einen optimierten Prompt, mit dem ich dich beauftragen kann, differenzierte Mathematik-Aufgaben für verschiedene Leistungsniveaus zu erstellen. Der Prompt soll wiederverwendbar sein und Platzhalter für Thema, Klasse und Schwierigkeitsgrad enthalten.
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Warum ist das so mächtig?</div>
+          <p>Mit Reverse Prompting umgehst du das größte Problem beim Prompt-Schreiben: Du musst nicht wissen, wie man einen guten Prompt formuliert – du zeigst nur, was du brauchst, und lässt die KI das Werkzeug dafür bauen.</p>
+        </div>
+      </div>
+
+      <!-- Prompt-Bibliothek -->
+      <div class="content-card content-card--ref">
+        <h2>Die eigene Prompt-Bibliothek aufbauen</h2>
+
+        <p>Der Aufwand für gutes Prompting lohnt sich nur, wenn du die Ergebnisse nicht jedes Mal neu erarbeitest. <strong>Speichere deine besten Prompts</strong> in einer persönlichen Bibliothek – und teile sie im Kollegium.</p>
+
+        <h3>Was in eine Prompt-Bibliothek gehört</h3>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Warum wichtig</th>
+                <th>Beispiel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Name / Anwendungsfall</strong></td>
+                <td>Schnell wiederfindbar</td>
+                <td>„Differenzierte Aufgaben Mathe"</td>
+              </tr>
+              <tr>
+                <td><strong>Prompt-Text</strong></td>
+                <td>Direkt kopierbar</td>
+                <td>Der vollständige Prompt mit Platzhaltern</td>
+              </tr>
+              <tr>
+                <td><strong>Platzhalter-Tabelle</strong></td>
+                <td>Zeigt, was beim Einsatz angepasst werden muss</td>
+                <td>[Thema], [Klasse], [Schwierigkeitsgrad]</td>
+              </tr>
+              <tr>
+                <td><strong>Letztes Ergebnis</strong></td>
+                <td>Qualitätserinnerung</td>
+                <td>Screenshot oder Text des letzten Outputs</td>
+              </tr>
+              <tr>
+                <td><strong>Anmerkungen</strong></td>
+                <td>Erfahrungswissen dokumentieren</td>
+                <td>„Bei Klasse 5 Sprache vereinfachen"</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Wo du Prompts speichern kannst</h3>
+        <ul>
+          <li><strong>Einfachste Lösung:</strong> Word- oder Google-Docs-Datei, alphabetisch oder nach Fach geordnet</li>
+          <li><strong>Strukturierter:</strong> Notion, Obsidian oder Apple Notes mit Tags</li>
+          <li><strong>In telli:</strong> Systemprompts direkt im Tool hinterlegen und benennen</li>
+          <li><strong>Im Kollegium:</strong> Gemeinsames Dokument in der Schulcloud oder SharePoint</li>
+        </ul>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Tipp: Prompt-Vorlage aus Übung 6</div>
+          <p>In <a href="../aufgaben/aufgabe-6.html">Übung 6</a> hast du bereits eine eigene Prompt-Vorlage entwickelt. Diese ist der erste Eintrag in deiner Bibliothek. Kopiere sie nach Abschluss der Fortbildung in dein bevorzugtes Ablagesystem.</p>
+        </div>
+      </div>
+
+      <!-- Zusammenfassung -->
+      <div class="content-card content-card--ref">
+        <h2>Zusammenfassung: Vom Schema zum Workflow</h2>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Klassisches Prompting</th>
+                <th>Modernes Prompting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Prompt muss beim ersten Mal perfekt sein</td>
+                <td>Starten, anpassen, verfeinern</td>
+              </tr>
+              <tr>
+                <td>Monolog: Eingabe → Ausgabe</td>
+                <td>Dialog: Gespräch, Iteration, Kooperation</td>
+              </tr>
+              <tr>
+                <td>Fünf Bausteine streng einhalten</td>
+                <td>Bausteine als Orientierung, nicht als Zwang</td>
+              </tr>
+              <tr>
+                <td>Jedes Mal von vorne anfangen</td>
+                <td>Prompt-Bibliothek aufbauen und pflegen</td>
+              </tr>
+              <tr>
+                <td>Ich muss wissen, was ich will</td>
+                <td>KI hilft mir, herauszufinden, was ich will</td>
+              </tr>
+              <tr>
+                <td>Prompt ist fertig, wenn Ergebnis kommt</td>
+                <td>Reverse Prompting: Ergebnis zeigen, Prompt ableiten lassen</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-box--green">
+          <div class="info-box__title">Kernbotschaft</div>
+          <p>Das Fünf-Bausteine-Modell ist dein Handwerkszeug für den Einstieg – und bleibt hilfreich, wenn du gezielt strukturieren willst. Aber lass dich nicht einengen: Gutes Prompting heute ist ein <strong>lebendiger, dialogischer Prozess</strong>, der mit Erfahrung immer schneller und intuitiver wird.</p>
+        </div>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="was-ist-ein-prompt.html">← Was ist ein Prompt?</a>
+        <a class="btn btn--primary-ref" href="prompt-anatomie.html">Weiter: Prompt-Anatomie →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Erstellt mit ❤️ und <a href="https://claude.ai/code">Claude Code</a> von Joscha Falck &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /* ============================================================
    PROMPT-GUIDE – Hauptstylesheet
-   Zwei Farbbereiche: Referenz (Blau) & Aufgaben (Grün)
+   Drei Farbbereiche: Grundlagen (Blau), Übungen (Grün), Challenges (Lila)
    ============================================================ */
 
 /* ----- Reset & Basisvariablen ----- */
@@ -11,17 +11,23 @@
 }
 
 :root {
-  /* Referenz-Palette (Blau) */
+  /* Grundlagen-Palette (Blau) */
   --ref-primary:   #1a5276;
   --ref-secondary: #2980b9;
   --ref-light:     #d6eaf8;
   --ref-accent:    #aed6f1;
 
-  /* Aufgaben-Palette (Grün/Teal) */
+  /* Übungen-Palette (Grün/Teal) */
   --auf-primary:   #1a6b4a;
   --auf-secondary: #27ae60;
   --auf-light:     #d5f5e3;
   --auf-accent:    #a9dfbf;
+
+  /* Challenges-Palette (Lila) */
+  --cha-primary:   #6c3483;
+  --cha-secondary: #9b59b6;
+  --cha-light:     #f0e6f6;
+  --cha-accent:    #d7bde2;
 
   /* Neutrale Töne */
   --gray-100: #f8f9fa;
@@ -1050,4 +1056,158 @@ details[open] {
   .site-nav, .task-footer-nav, .solution-reveal__btn { display: none; }
   .content-card { box-shadow: none; border: 1px solid #ccc; }
   body { background: #fff; }
+}
+
+/* ============================================================
+   CHALLENGES-BEREICH – Lila Palette
+   ============================================================ */
+
+/* Nav-Button */
+.nav-btn--cha {
+  background: var(--cha-light);
+  color: var(--cha-primary);
+}
+.nav-btn--cha:hover {
+  background: var(--cha-accent);
+  opacity: 1;
+}
+
+/* Seitenheader */
+.page-header--cha {
+  background: linear-gradient(135deg, var(--cha-primary) 0%, var(--cha-secondary) 100%);
+}
+
+/* Content-Card Akzentlinie */
+.content-card--cha { border-top: 4px solid var(--cha-secondary); }
+
+/* Section-Nav */
+.section-nav--cha h3 { color: var(--cha-primary); }
+.section-nav--cha .section-nav__links a {
+  background: var(--cha-light);
+  color: var(--cha-primary);
+}
+.section-nav--cha .section-nav__links a:hover,
+.section-nav--cha .section-nav__links a.active {
+  background: var(--cha-accent);
+  opacity: 1;
+}
+
+/* Area-Card Startseite */
+.area-card--cha .area-card__header {
+  background: linear-gradient(135deg, var(--cha-primary), var(--cha-secondary));
+}
+.area-card--cha .area-card__list li::before { color: var(--cha-secondary); }
+
+/* Buttons */
+.btn--primary-cha {
+  background: var(--cha-primary);
+  color: #fff;
+}
+.btn--primary-cha:hover { background: var(--cha-secondary); opacity: 1; }
+
+/* Task-Instruction */
+.task-instruction--cha {
+  background: var(--cha-light);
+  border-left: 4px solid var(--cha-secondary);
+}
+.task-instruction--cha .task-instruction__label { color: var(--cha-primary); }
+
+/* Challenge-Nummer */
+.challenge-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--cha-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Challenge-Karten auf Übersichtsseite */
+.challenge-card {
+  border: 2px solid var(--cha-accent);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.challenge-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.challenge-card__header {
+  background: linear-gradient(135deg, var(--cha-primary), var(--cha-secondary));
+  color: #fff;
+  padding: var(--space-lg);
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.challenge-card__header-text h3 {
+  margin-bottom: var(--space-xs);
+  font-size: 1.1rem;
+}
+
+.challenge-card__header-text p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.challenge-card__body {
+  background: #fff;
+  padding: var(--space-lg);
+}
+
+/* Tipp-Accordion Challenges */
+.tip-accordion {
+  margin-top: var(--space-lg);
+}
+
+.tip-accordion details {
+  border-color: var(--cha-accent);
+}
+
+.tip-accordion summary {
+  color: var(--cha-primary);
+  font-weight: 600;
+}
+
+.tip-accordion details[open] {
+  background: var(--cha-light);
+}
+
+/* Info-Box Lila (Challenges) */
+.info-box--purple {
+  background: var(--cha-light);
+  border-color: var(--cha-secondary);
+  color: var(--cha-primary);
+}
+
+/* Fortschritt Challenges */
+.progress-bar--cha .progress-bar__fill {
+  background: linear-gradient(90deg, var(--cha-primary), var(--cha-secondary));
+}
+.progress-bar--cha {
+  background: var(--cha-light);
+}
+
+/* Challenge-Stufe-Badge */
+.badge-challenge-level {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.2rem 0.65rem;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--cha-light);
+  color: var(--cha-primary);
+  border: 1.5px solid var(--cha-accent);
 }

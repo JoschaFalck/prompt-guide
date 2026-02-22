@@ -13,8 +13,9 @@
     <div class="site-nav__inner">
       <a class="site-nav__logo" href="index.html">Prompting im Unterricht</a>
       <div class="site-nav__links">
-        <a class="nav-btn nav-btn--ref" href="referenz/was-ist-ein-prompt.html">📚 Referenz</a>
-        <a class="nav-btn nav-btn--auf" href="aufgaben/aufgabe-1.html">✏️ Aufgaben</a>
+        <a class="nav-btn nav-btn--ref" href="referenz/was-ist-ein-prompt.html">📚 Grundlagen</a>
+        <a class="nav-btn nav-btn--auf" href="aufgaben/aufgabe-1.html">✏️ Übungen</a>
+        <a class="nav-btn nav-btn--cha" href="challenges/challenge-1.html">🏆 Challenges</a>
       </div>
     </div>
   </nav>
@@ -36,19 +37,20 @@
         <p>Am Ende dieser Fortbildung kannst du einen <strong>wirksamen Prompt für einen konkreten Unterrichtsfall</strong> formulieren – und begründen, warum er funktioniert.</p>
       </div>
 
-      <!-- Zwei Hauptbereiche -->
-      <div class="card-grid">
+      <!-- Drei Hauptbereiche -->
+      <div class="card-grid" style="grid-template-columns: 1fr 1fr 1fr;">
 
-        <!-- Referenz -->
-        <a class="area-card area-card--ref" href="referenz/was-ist-ein-prompt.html" aria-label="Zum Referenzbereich">
+        <!-- Grundlagen -->
+        <a class="area-card area-card--ref" href="referenz/was-ist-ein-prompt.html" aria-label="Zu den Grundlagen">
           <div class="area-card__header">
             <div class="area-card__icon">📚</div>
-            <h2>Referenz</h2>
+            <h2>Grundlagen</h2>
             <p>Nachschlagen, wann immer du etwas brauchst – kein vorgeschriebener Weg.</p>
           </div>
           <div class="area-card__body">
             <ul class="area-card__list">
               <li>Was ist ein Prompt?</li>
+              <li>Modernes &amp; dialogisches Prompting</li>
               <li>Prompt-Anatomie: die fünf Bausteine</li>
               <li>Prompt-Arten im Überblick</li>
               <li>Beispielsammlung (nach Fach filterbar)</li>
@@ -57,12 +59,12 @@
           </div>
         </a>
 
-        <!-- Aufgaben -->
-        <a class="area-card area-card--auf" href="aufgaben/aufgabe-1.html" aria-label="Zu den Aufgaben">
+        <!-- Übungen -->
+        <a class="area-card area-card--auf" href="aufgaben/aufgabe-1.html" aria-label="Zu den Übungen">
           <div class="area-card__header">
             <div class="area-card__icon">✏️</div>
-            <h2>Aufgaben</h2>
-            <p>Sechs Aufgaben – von der Analyse bis zur eigenen Vorlage.</p>
+            <h2>Übungen</h2>
+            <p>Sechs Übungen – von der Analyse bis zur eigenen Vorlage.</p>
           </div>
           <div class="area-card__body">
             <ul class="area-card__list">
@@ -76,6 +78,23 @@
           </div>
         </a>
 
+        <!-- Challenges -->
+        <a class="area-card area-card--cha" href="challenges/challenge-1.html" aria-label="Zu den Challenges">
+          <div class="area-card__header">
+            <div class="area-card__icon">🏆</div>
+            <h2>Challenges</h2>
+            <p>Komplexe Szenarien für Fortgeschrittene – selbstständig und kreativ.</p>
+          </div>
+          <div class="area-card__body">
+            <ul class="area-card__list">
+              <li>1 – Systemprompt für Korrekturworkflow</li>
+              <li>2 – Feedback-Lernszenario mit telli</li>
+              <li>3 – KI-resiliente Aufgaben entwickeln</li>
+              <li>4 – Eigenes Lernszenario gestalten</li>
+            </ul>
+          </div>
+        </a>
+
       </div>
 
       <!-- Hinweis zur Nutzung -->
@@ -83,13 +102,18 @@
         <h2>So nutzt du diese Seite</h2>
 
         <div class="info-box info-box--blue">
-          <div class="info-box__title">📚 Referenzbereich</div>
-          <p>Nutze den Referenzbereich jederzeit – vor, während und nach den Aufgaben. Hier findest du Erklärungen, Beispiele und Checklisten zum Nachschlagen. Du musst nichts auswendig lernen.</p>
+          <div class="info-box__title">📚 Grundlagen</div>
+          <p>Nutze den Grundlagenbereich jederzeit – vor, während und nach den Übungen. Hier findest du Erklärungen, Beispiele und Checklisten zum Nachschlagen. Du musst nichts auswendig lernen.</p>
         </div>
 
         <div class="info-box info-box--green">
-          <div class="info-box__title">✏️ Aufgabenbereich</div>
-          <p>Die Aufgaben bauen aufeinander auf und werden vom Referenten / der Referentin moderiert. Arbeite sie der Reihe nach durch. Deine Eingaben werden automatisch in deinem Browser gespeichert – auch wenn du die Seite neu lädst.</p>
+          <div class="info-box__title">✏️ Übungen</div>
+          <p>Die Übungen bauen aufeinander auf und werden vom Referenten / der Referentin moderiert. Arbeite sie der Reihe nach durch. Deine Eingaben werden automatisch in deinem Browser gespeichert – auch wenn du die Seite neu lädst.</p>
+        </div>
+
+        <div class="info-box info-box--purple">
+          <div class="info-box__title">🏆 Challenges</div>
+          <p>Die Challenges sind komplexe, offene Aufgaben für Lehrkräfte, die über die geführten Übungen hinausgehen wollen. Hier entwickelst du eigene Szenarien, Systemprompts und Lerndesigns – ideal für die Weiterarbeit nach der Fortbildung oder in Teamarbeit.</p>
         </div>
 
         <div class="info-box info-box--yellow">
@@ -102,7 +126,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>Lehrkräftefortbildung &ndash; Prompting im Unterricht &nbsp;|&nbsp; Alle Inhalte dienen ausschließlich der Fortbildung</p>
+    <p>Erstellt mit ❤️ und <a href="https://claude.ai/code">Claude Code</a> von Joscha Falck</p>
   </footer>
 
   <script src="js/main.js"></script>
