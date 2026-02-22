@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 1: Korrektur-Systemprompt – Challenges</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Grundlagen</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Übungen</a>
+        <a class="nav-btn nav-btn--cha nav-btn--active" href="challenge-1.html">🏆 Challenges</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--cha">
+        <p class="page-header__label">Challenges</p>
+        <h1>Challenge 1: Korrektur-Systemprompt</h1>
+        <p class="page-header__subtitle">Entwickle einen Systemprompt für einen KI-gestützten Korrekturworkflow mit telli</p>
+      </header>
+
+      <!-- Challenge-Navigation -->
+      <nav class="section-nav section-nav--cha" aria-label="Challenge-Navigation">
+        <h3>Challenges</h3>
+        <ul class="section-nav__links">
+          <li><a href="challenge-1.html" class="active">1 – Korrektur-Workflow</a></li>
+          <li><a href="challenge-2.html">2 – Feedback-Lernszenario</a></li>
+          <li><a href="challenge-3.html">3 – KI-resiliente Aufgaben</a></li>
+          <li><a href="challenge-4.html">4 – Eigenes Lernszenario</a></li>
+        </ul>
+      </nav>
+
+      <!-- Was ist ein Systemprompt? -->
+      <div class="content-card content-card--cha">
+        <div class="task-header">
+          <div class="challenge-number">1</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Systemprompt für einen Korrekturworkflow</h2>
+            <span class="badge-challenge-level">🏆 Advanced Challenge</span>
+          </div>
+        </div>
+
+        <div class="task-instruction task-instruction--cha">
+          <div class="task-instruction__label">Deine Aufgabe</div>
+          <p>Entwickle einen sinnvollen <strong>Systemprompt</strong> für einen telli-Assistenten, der Lehrkräfte beim Korrigieren von digital vorliegenden Schüler:innen-Aufgaben unterstützt. Der Systemprompt definiert, wie sich der Assistent verhält – bevor überhaupt die erste Schülerarbeit eingefügt wird.</p>
+        </div>
+
+        <div class="info-box info-box--purple">
+          <div class="info-box__title">Was ist ein Systemprompt?</div>
+          <p>Ein Systemprompt ist eine dauerhafte Grundinstruktion, die du einem KI-Assistenten einmalig gibst. Er legt fest: Welche Rolle nimmt die KI ein? Was sind ihre Aufgaben? Was darf sie nicht? Wie soll sie antworten? Jeder einzelne Prompt, den du danach sendest, wird im Kontext dieses Systemprompts verarbeitet. Bei telli kannst du Systemprompts für wiederkehrende Workflows speichern.</p>
+        </div>
+      </div>
+
+      <!-- Was soll der Assistent können? -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 1: Was soll der Korrektur-Assistent können?</h3>
+        <p>Bevor du den Systemprompt schreibst, kläre, was der Assistent leisten soll. Kreuze an, was für dich relevant ist – und ergänze eigene Punkte.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Typische Funktionen eines Korrektur-Assistenten</div>
+          <ul>
+            <li>Schülerarbeiten auf Inhalt prüfen und zusammenfassen</li>
+            <li>Sprachliche Fehler markieren und kategorisieren (Grammatik, Rechtschreibung, Stil)</li>
+            <li>Stärken und Schwächen nach einem Erwartungshorizont einschätzen</li>
+            <li>Einen Bewertungsvorschlag (Punkte, Note) machen – zur Prüfung durch die Lehrkraft</li>
+            <li>Individuelles Feedback formulieren, das an die Schüler:in zurückgegeben werden kann</li>
+            <li>Auffälligkeiten zwischen verschiedenen Arbeiten melden (z. B. mögliche Plagiatshinweise)</li>
+            <li>Einen Überblick über die Klassenleistung geben (häufigste Fehler, allgemeine Stärken)</li>
+          </ul>
+        </div>
+
+        <label class="input-label" for="funktionen-auswahl">Welche Funktionen möchtest du einbauen? Welche nicht? Warum?</label>
+        <textarea class="input-area" id="funktionen-auswahl" rows="4"
+          placeholder="Ich möchte unbedingt … / Ich möchte explizit nicht …, weil …"></textarea>
+      </div>
+
+      <!-- Schritt 2: Fach und Aufgabentyp -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 2: Fach, Aufgabentyp und Bewertungsraster</h3>
+        <p>Ein guter Systemprompt ist konkret. Entscheide dich für einen realen Anwendungsfall aus deinem Unterricht.</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label class="input-label" for="cha1-fach">Fach:</label>
+            <input type="text" id="cha1-fach" class="input-area" style="min-height:auto; padding:0.6rem 0.8rem; resize:none;" placeholder="z. B. Deutsch, Englisch, Geschichte …">
+          </div>
+          <div>
+            <label class="input-label" for="cha1-klasse">Klasse:</label>
+            <input type="text" id="cha1-klasse" class="input-area" style="min-height:auto; padding:0.6rem 0.8rem; resize:none;" placeholder="z. B. 9b, Gymnasium …">
+          </div>
+        </div>
+
+        <label class="input-label" for="cha1-aufgabentyp">Welche Art von Aufgabe wird korrigiert?</label>
+        <textarea class="input-area" id="cha1-aufgabentyp" rows="3"
+          placeholder="z. B. Argumentativer Aufsatz (500–700 Wörter), Kurzreferat-Protokoll, Multiple-Choice-Test, offene Fragen zur Textanalyse …"></textarea>
+
+        <label class="input-label" for="cha1-erwartung" style="margin-top: 1rem;">Bewertungskriterien / Erwartungshorizont (stichpunktartig):</label>
+        <textarea class="input-area" id="cha1-erwartung" rows="5"
+          placeholder="Inhalt (50 %): These klar, drei Argumente mit Belegen …&#10;Sprache (30 %): Satzbau, Wortwahl, Stil …&#10;Form (20 %): Gliederung, Einleitung, Schluss …"></textarea>
+      </div>
+
+      <!-- Schritt 3: Systemprompt schreiben -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 3: Dein Systemprompt</h3>
+        <p>Schreibe jetzt den vollständigen Systemprompt. Er soll so formuliert sein, dass du ihn in telli einmalig hinterlegst und danach für jede Schülerarbeit nur noch die Arbeit selbst einfügst.</p>
+
+        <!-- Klappbare Tipps -->
+        <div class="tip-accordion">
+          <details>
+            <summary>💡 Tipp: Was ein guter Systemprompt enthält</summary>
+            <div class="details-body">
+              <ul>
+                <li><strong>Rollendefinition:</strong> „Du bist ein Korrekturassistent für Lehrkräfte…"</li>
+                <li><strong>Aufgabenbeschreibung:</strong> Was soll der Assistent konkret tun?</li>
+                <li><strong>Bewertungsraster:</strong> Die Kriterien direkt im Systemprompt verankern</li>
+                <li><strong>Ausgabeformat:</strong> Wie soll das Feedback strukturiert sein? (z. B. Tabelle, Stichpunkte, Freitext)</li>
+                <li><strong>Tonalität:</strong> Sachlich? Konstruktiv? Lehrkraft-adressiert oder schüler:innen-adressiert?</li>
+                <li><strong>Grenzen:</strong> Was soll die KI <em>nicht</em> tun? (z. B. keine endgültige Note vergeben, keine pauschalen Urteile)</li>
+                <li><strong>Eingabeformat:</strong> Wie wird die Schülerarbeit eingefügt? (z. B. „Die Schülerarbeit folgt nach dem Trennzeichen —")</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Tipp: Typisches Systemprompt-Muster</summary>
+            <div class="details-body">
+              <div class="prompt-block">
+                <span class="mark-rolle">Du bist ein professioneller Korrekturassistent für Lehrkräfte.</span> <span class="mark-aufgabe">Deine Aufgabe ist es, digital eingereichte Schülerarbeiten nach dem folgenden Bewertungsraster zu analysieren und ein strukturiertes Korrektur-Feedback zu erstellen.</span>
+
+<span class="mark-kontext">Fach: [Fach]. Aufgabentyp: [Typ]. Klasse: [Klasse].
+
+Bewertungskriterien:
+[Kriterien hier einfügen]</span>
+
+<span class="mark-format">Für jede eingereichte Arbeit erstellst du folgende Ausgabe:
+1. Kurzzusammenfassung der Arbeit (2–3 Sätze)
+2. Stärken (Stichpunkte, max. 3)
+3. Verbesserungsbedarf nach Kriterium (je 1–2 Sätze)
+4. Bewertungsvorschlag (Punkte je Kriterium, Gesamtpunktzahl)
+5. Ein direktes Feedback an die Schüler:in (ca. 3 Sätze, wertschätzend und konstruktiv)</span>
+
+<span class="mark-einschr">Vergib keine Endnote. Weise darauf hin, wenn die Arbeit außergewöhnlich kurz oder strukturell unvollständig ist. Erfinde keine Inhalte, die nicht in der Arbeit stehen. Die Schülerarbeit folgt nach dem Trennzeichen ---.</span>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Tipp: Pädagogische Grenzen setzen</summary>
+            <div class="details-body">
+              <p>Ein Korrekturassistent sollte nie die letzte Instanz sein. Formuliere im Systemprompt explizit:</p>
+              <ul>
+                <li>„Der Bewertungsvorschlag dient als Orientierung – die endgültige Entscheidung liegt bei der Lehrkraft."</li>
+                <li>„Weise auf Grenzfälle hin, in denen menschliches Urteil besonders wichtig ist."</li>
+                <li>„Stelle keine Diagnosen über Lernbeeinträchtigungen oder Verhalten."</li>
+                <li>„Bewerte nicht die Person, nur die Arbeit."</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <label class="input-label" for="cha1-systemprompt" style="margin-top: 1.5rem;">Dein Systemprompt:</label>
+        <textarea class="input-area" id="cha1-systemprompt" rows="14" data-maxlength="2000"
+          placeholder="Du bist … Deine Aufgabe ist … Bewertungskriterien: … Format der Ausgabe: … Bitte vermeide …&#10;&#10;Die Schülerarbeit folgt nach dem Trennzeichen ---."></textarea>
+      </div>
+
+      <!-- Schritt 4: Test und Reflexion -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 4: Test und Reflexion</h3>
+
+        <label class="input-label" for="cha1-test">Wenn du den Systemprompt jetzt in telli testest: Was funktioniert gut, was müsstest du anpassen?</label>
+        <textarea class="input-area" id="cha1-test" rows="4"
+          placeholder="Das Ergebnis war … / Ich würde noch ergänzen … / Ein Problem war …"></textarea>
+
+        <label class="input-label" for="cha1-grenzen" style="margin-top:1rem;">Wo liegen aus deiner Sicht die Grenzen dieses Ansatzes?</label>
+        <textarea class="input-area" id="cha1-grenzen" rows="3"
+          placeholder="z. B. Datenschutz bei Schülerarbeiten / Qualität bei kurzen Antworten / KI-Fehler bei Fachinhalten …"></textarea>
+      </div>
+
+      <div class="task-footer-nav">
+        <div class="placeholder"></div>
+        <a class="btn btn--primary-cha" href="challenge-2.html">Weiter: Challenge 2 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Erstellt mit ❤️ und <a href="https://claude.ai/code">Claude Code</a> von Joscha Falck &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

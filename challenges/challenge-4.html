@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 4: Eigenes Lernszenario – Challenges</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Grundlagen</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Übungen</a>
+        <a class="nav-btn nav-btn--cha nav-btn--active" href="challenge-1.html">🏆 Challenges</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--cha">
+        <p class="page-header__label">Challenges</p>
+        <h1>Challenge 4: Eigenes Lernszenario</h1>
+        <p class="page-header__subtitle">Entwickle ein eigenes KI-gestütztes Lernszenario für deinen Unterricht</p>
+      </header>
+
+      <nav class="section-nav section-nav--cha" aria-label="Challenge-Navigation">
+        <h3>Challenges</h3>
+        <ul class="section-nav__links">
+          <li><a href="challenge-1.html">1 – Korrektur-Workflow</a></li>
+          <li><a href="challenge-2.html">2 – Feedback-Lernszenario</a></li>
+          <li><a href="challenge-3.html">3 – KI-resiliente Aufgaben</a></li>
+          <li><a href="challenge-4.html" class="active">4 – Eigenes Lernszenario</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-card content-card--cha">
+        <div class="task-header">
+          <div class="challenge-number">4</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Eigenes Lernszenario entwickeln</h2>
+            <span class="badge-challenge-level">🏆 Offene Challenge</span>
+          </div>
+        </div>
+
+        <div class="task-instruction task-instruction--cha">
+          <div class="task-instruction__label">Deine Aufgabe</div>
+          <p>Diese Challenge ist vollständig offen. Du entwickelst ein <strong>eigenes KI-gestütztes Lernszenario</strong> für deinen Unterricht – von der ersten Idee bis zur einsatzbereiten Umsetzung. Nutze dabei alles, was du in den Grundlagen und den bisherigen Challenges gelernt hast.</p>
+        </div>
+
+        <div class="info-box info-box--purple">
+          <div class="info-box__title">Was ist ein Lernszenario?</div>
+          <p>Ein Lernszenario beschreibt, wie Lernende mit KI interagieren, um ein Lernziel zu erreichen. Es geht über einen einzelnen Prompt hinaus: Es umfasst die pädagogische Absicht, das Aufgabendesign, die Rolle der KI, die Rolle der Lehrkraft und die Art, wie die Schüler:innen mit dem Ergebnis weiterarbeiten.</p>
+        </div>
+      </div>
+
+      <!-- Inspiration -->
+      <div class="content-card content-card--cha">
+        <h3>Inspiration: Was könnte dein Szenario sein?</h3>
+
+        <div class="tip-accordion">
+          <details>
+            <summary>💡 Idee: KI als Diskussionspartner</summary>
+            <div class="details-body">
+              <p>Schüler:innen führen ein Streitgespräch mit einer KI, die eine bestimmte Position einnimmt. Die KI widerspricht, stellt Rückfragen, fordert Belege. Ziel: Argumentation stärken.</p>
+              <div class="prompt-block">
+                Du spielst den Teufelsfürsprecher zu folgender These: [These]. Widersprich den Argumenten der Schüler:in konsequent. Stelle bohrende Rückfragen. Gib erst nach, wenn das Argument wirklich stark belegt ist. Ziel ist nicht, die Schüler:in zu entmutigen, sondern ihr Denken zu schärfen.
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Idee: KI als Lese-Sparringspartner</summary>
+            <div class="details-body">
+              <p>Schüler:innen lesen einen schwierigen Text und befragen die KI wie einen Tutor: „Was meint der Autor mit …?", „Kannst du das mit anderen Worten erklären?", „Was ist der Unterschied zwischen … und …?"</p>
+              <div class="prompt-block">
+                Du bist ein geduldiger Lese-Tutor. Erkläre Begriffe und Zusammenhänge aus dem folgenden Text, wenn die Schüler:in danach fragt. Gib nie mehr als nötig preis – stelle Gegenfragen, wenn du merkst, dass die Schüler:in den Text selbst verstehen könnte. Fasse am Ende gemeinsam mit ihr zusammen.
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Idee: KI als historische Figur</summary>
+            <div class="details-body">
+              <p>Die KI nimmt die Rolle einer historischen oder literarischen Figur ein. Schüler:innen interviewen sie, stellen Fragen aus der Gegenwart oder lassen sich Entscheidungen erklären.</p>
+              <div class="prompt-block">
+                Du spielst [historische Figur] zum Zeitpunkt [Jahr/Ereignis]. Antworte nur aus dieser Perspektive und diesem Wissensstand. Wenn du etwas nicht wissen kannst (weil es nach deiner Zeit liegt), sage das. Zeige die Widersprüche und Grenzen dieser Figur.
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Idee: KI als Schreib-Coach mit Phasen</summary>
+            <div class="details-body">
+              <p>Der Schreibprozess wird in Phasen unterteilt. Die KI begleitet jede Phase anders: In der Ideenfindung brainstormt sie mit. Im Entwurf gibt sie Struktur-Feedback. Bei der Überarbeitung prüft sie Sprache und Argumentation.</p>
+              <div class="prompt-block">
+                Wir arbeiten jetzt in Phase [1/2/3] des Schreibprozesses. In Phase 1 (Ideenfindung) generierst du Ideen auf Anfrage und fragst nach. In Phase 2 (Entwurf) gibst du nur Struktur-Feedback. In Phase 3 (Überarbeitung) kommentierst du Sprache und Logik. Die Schüler:in sagt dir, in welcher Phase sie ist.
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Idee: KI als Lernstand-Diagnose-Tool</summary>
+            <div class="details-body">
+              <p>Am Anfang einer Stunde beantwortet die Schüler:in drei kurze Fragen der KI. Die KI analysiert die Antworten und gibt der Lehrkraft (oder der Schüler:in) eine Einschätzung des Vorwissens.</p>
+              <div class="prompt-block">
+                Stelle der Schüler:in genau drei diagnostische Fragen zum Thema [Thema], um ihr Vorwissen einzuschätzen. Warte nach jeder Frage auf die Antwort. Am Ende erstelle eine kurze Einschätzung: Was weiß sie sicher? Was ist noch unklar? Was braucht sie als nächstes?
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Eigene Idee entwickeln -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 1: Meine Idee</h3>
+
+        <label class="input-label" for="cha4-idee">Beschreibe deine Idee in 3–5 Sätzen:</label>
+        <textarea class="input-area" id="cha4-idee" rows="5"
+          placeholder="Mein Lernszenario ist … Die Schüler:innen sollen … Die KI übernimmt die Rolle … Das pädagogische Ziel ist …"></textarea>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+          <div>
+            <label class="input-label" for="cha4-fach">Fach:</label>
+            <input type="text" id="cha4-fach" class="input-area" style="min-height:auto; padding:0.6rem 0.8rem; resize:none;" placeholder="">
+          </div>
+          <div>
+            <label class="input-label" for="cha4-klasse">Klasse:</label>
+            <input type="text" id="cha4-klasse" class="input-area" style="min-height:auto; padding:0.6rem 0.8rem; resize:none;" placeholder="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Szenario-Design -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 2: Szenario-Design</h3>
+        <p>Beantworte diese Designfragen, um dein Szenario zu schärfen:</p>
+
+        <label class="input-label" for="cha4-lernziel">Lernziel – was sollen Schüler:innen am Ende können oder verstehen?</label>
+        <textarea class="input-area" id="cha4-lernziel" rows="2" placeholder="Die Schüler:innen können …"></textarea>
+
+        <label class="input-label" for="cha4-rolle-ki" style="margin-top:1rem;">Rolle der KI – was genau tut die KI in diesem Szenario?</label>
+        <textarea class="input-area" id="cha4-rolle-ki" rows="2" placeholder="Die KI übernimmt die Rolle … und tut konkret …"></textarea>
+
+        <label class="input-label" for="cha4-rolle-lehrkraft" style="margin-top:1rem;">Rolle der Lehrkraft – was tust du, während die Schüler:innen mit der KI arbeiten?</label>
+        <textarea class="input-area" id="cha4-rolle-lehrkraft" rows="2" placeholder="Ich beobachte … / Ich greife ein, wenn … / Ich moderiere danach …"></textarea>
+
+        <label class="input-label" for="cha4-weiterarbeit" style="margin-top:1rem;">Was passiert nach der KI-Interaktion? Wie wird das Ergebnis weiterverwendet?</label>
+        <textarea class="input-area" id="cha4-weiterarbeit" rows="3" placeholder="Die Schüler:innen teilen ihr Ergebnis … / Es wird in einer Diskussion weiterverwendet … / Es dient als Entwurf für …"></textarea>
+      </div>
+
+      <!-- Der Prompt -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 3: Dein Prompt / Systemprompt</h3>
+
+        <div class="tip-accordion">
+          <details>
+            <summary>💡 Tipp: Qualitätskriterien für deinen Prompt</summary>
+            <div class="details-body">
+              <ul>
+                <li>Ist die Rolle der KI klar definiert?</li>
+                <li>Weiß die KI, was sie tun und was sie lassen soll?</li>
+                <li>Passt der Ton zur Zielgruppe (Schüler:innen vs. Lehrkraft)?</li>
+                <li>Verhindert der Prompt, dass die KI zu viel verrät oder die Arbeit abnimmt?</li>
+                <li>Ist das Lernziel im Prompt erkennbar?</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <label class="input-label" for="cha4-prompt" style="margin-top:1rem;">Dein Prompt:</label>
+        <textarea class="input-area" id="cha4-prompt" rows="12" data-maxlength="2000"
+          placeholder="Schreibe hier deinen vollständigen Prompt …"></textarea>
+      </div>
+
+      <!-- Reflexion und Transfer -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 4: Abschlussreflexion</h3>
+
+        <label class="input-label" for="cha4-mehrwert">Was ist der pädagogische Mehrwert dieses Szenarios gegenüber einem klassischen Unterrichtsansatz ohne KI?</label>
+        <textarea class="input-area" id="cha4-mehrwert" rows="3"
+          placeholder="Der Mehrwert liegt darin, dass …"></textarea>
+
+        <label class="input-label" for="cha4-risiken" style="margin-top:1rem;">Was sind die größten Risiken oder Schwächen?</label>
+        <textarea class="input-area" id="cha4-risiken" rows="3"
+          placeholder="Ein Risiko ist …"></textarea>
+
+        <label class="input-label" for="cha4-naechster-schritt" style="margin-top:1rem;">Was ist dein nächster konkreter Schritt zur Umsetzung?</label>
+        <textarea class="input-area" id="cha4-naechster-schritt" rows="2"
+          placeholder="Ich werde als nächstes …"></textarea>
+
+        <div class="info-box info-box--green" style="margin-top: 1.5rem;">
+          <div class="info-box__title">🎉 Alle vier Challenges abgeschlossen!</div>
+          <p>Du hast Systemprompts, Feedback-Szenarien, KI-resiliente Aufgaben und ein eigenes Lernszenario entwickelt. Das ist fortgeschrittenes Prompting-Wissen, das direkt im Unterricht anwendbar ist. Teile deine Ergebnisse gerne im Kollegium – gemeinsame Prompt-Bibliotheken entstehen so.</p>
+        </div>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="challenge-3.html">← Challenge 3</a>
+        <a class="btn btn--primary-ref" href="../index.html">Zur Startseite</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Erstellt mit ❤️ und <a href="https://claude.ai/code">Claude Code</a> von Joscha Falck &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

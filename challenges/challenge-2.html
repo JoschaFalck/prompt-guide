@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 2: Feedback-Lernszenario – Challenges</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__logo" href="../index.html">Prompting im Unterricht</a>
+      <div class="site-nav__links">
+        <a class="nav-btn nav-btn--ref" href="../referenz/was-ist-ein-prompt.html">📚 Grundlagen</a>
+        <a class="nav-btn nav-btn--auf" href="../aufgaben/aufgabe-1.html">✏️ Übungen</a>
+        <a class="nav-btn nav-btn--cha nav-btn--active" href="challenge-1.html">🏆 Challenges</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrapper">
+
+      <header class="page-header page-header--cha">
+        <p class="page-header__label">Challenges</p>
+        <h1>Challenge 2: Feedback-Lernszenario</h1>
+        <p class="page-header__subtitle">Gestalte ein telli-Szenario, in dem Lernende lernförderliches Feedback zu ihren Aufgaben erhalten</p>
+      </header>
+
+      <nav class="section-nav section-nav--cha" aria-label="Challenge-Navigation">
+        <h3>Challenges</h3>
+        <ul class="section-nav__links">
+          <li><a href="challenge-1.html">1 – Korrektur-Workflow</a></li>
+          <li><a href="challenge-2.html" class="active">2 – Feedback-Lernszenario</a></li>
+          <li><a href="challenge-3.html">3 – KI-resiliente Aufgaben</a></li>
+          <li><a href="challenge-4.html">4 – Eigenes Lernszenario</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-card content-card--cha">
+        <div class="task-header">
+          <div class="challenge-number">2</div>
+          <div>
+            <h2 style="margin-bottom:0.25rem;">Feedback-Lernszenario mit telli</h2>
+            <span class="badge-challenge-level">🏆 Advanced Challenge</span>
+          </div>
+        </div>
+
+        <div class="task-instruction task-instruction--cha">
+          <div class="task-instruction__label">Deine Aufgabe</div>
+          <p>Erstelle ein <strong>Feedback-Lernszenario mit telli</strong>, in dem Schüler:innen ihre Aufgaben einreichen und lernförderliches Feedback erhalten – nicht einfach die Lösung, sondern Rückmeldungen, die zum Weiterdenken anregen.</p>
+        </div>
+
+        <div class="info-box info-box--purple">
+          <div class="info-box__title">Was ist der Unterschied zu Challenge 1?</div>
+          <p>In Challenge 1 war der Assistent für die <strong>Lehrkraft</strong> – er lieferte Korrekturhilfe. Hier ist der Assistent direkt für die <strong>Schüler:innen</strong> zugänglich. Das verändert alles: Tonalität, Umfang, Pädagogik und die Frage, wie viel die KI verraten darf.</p>
+        </div>
+      </div>
+
+      <!-- Was ist lernförderliches Feedback? -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 1: Was macht Feedback lernförderlich?</h3>
+        <p>Bevor du den Prompt schreibst, kläre dein Verständnis von lernförderlichem Feedback.</p>
+
+        <div class="info-box info-box--blue">
+          <div class="info-box__title">Merkmale lernförderlichen Feedbacks (nach Hattie &amp; Timperley)</div>
+          <ul>
+            <li><strong>Feed Up:</strong> Wo will ich hin? (Lernziel klar machen)</li>
+            <li><strong>Feed Back:</strong> Wo stehe ich gerade? (Ist-Stand beschreiben)</li>
+            <li><strong>Feed Forward:</strong> Wie komme ich weiter? (nächster Schritt)</li>
+            <li>Fokus auf die <strong>Aufgabe</strong>, nicht die Person</li>
+            <li>Spezifisch statt pauschal: „Dein Argument in Absatz 2 fehlt ein Beleg" statt „Du musst besser argumentieren"</li>
+            <li>Aktivierend: Feedback soll zum Handeln einladen, nicht nur beschreiben</li>
+          </ul>
+        </div>
+
+        <label class="input-label" for="cha2-feedback-prinzipien">Welche dieser Prinzipien sind dir am wichtigsten für dein Szenario?</label>
+        <textarea class="input-area" id="cha2-feedback-prinzipien" rows="3"
+          placeholder="In meinem Szenario ist besonders wichtig, dass …"></textarea>
+      </div>
+
+      <!-- Kontext festlegen -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 2: Dein Szenario festlegen</h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label class="input-label" for="cha2-fach">Fach:</label>
+            <input type="text" id="cha2-fach" class="input-area" style="min-height:auto; padding:0.6rem 0.8rem; resize:none;" placeholder="z. B. Deutsch, Chemie …">
+          </div>
+          <div>
+            <label class="input-label" for="cha2-klasse">Klasse:</label>
+            <input type="text" id="cha2-klasse" class="input-area" style="min-height:auto; padding:0.6rem 0.8rem; resize:none;" placeholder="z. B. 8. Klasse, Gymnasium">
+          </div>
+        </div>
+
+        <label class="input-label" for="cha2-aufgabe">Welche Aufgabe bearbeiten die Schüler:innen?</label>
+        <textarea class="input-area" id="cha2-aufgabe" rows="3"
+          placeholder="z. B. Sie schreiben einen argumentativen Kurzaufsatz (300 Wörter) zu einer ethischen Frage …"></textarea>
+
+        <label class="input-label" for="cha2-lernziel" style="margin-top:1rem;">Was ist das Lernziel der Aufgabe?</label>
+        <textarea class="input-area" id="cha2-lernziel" rows="2"
+          placeholder="z. B. Die Schüler:innen können eine eigene These mit zwei belegten Argumenten schreiben."></textarea>
+
+        <label class="input-label" for="cha2-grenze" style="margin-top:1rem;">Was soll die KI auf keinen Fall tun?</label>
+        <textarea class="input-area" id="cha2-grenze" rows="2"
+          placeholder="z. B. Keine fertige Lösung schreiben. Keine Note nennen. Keine pauschalen Urteile."></textarea>
+      </div>
+
+      <!-- Prompt schreiben -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 3: Der Feedback-Prompt</h3>
+
+        <div class="tip-accordion">
+          <details>
+            <summary>💡 Tipp: Feedback ohne Lösung zu verraten</summary>
+            <div class="details-body">
+              <p>Das zentrale didaktische Problem: Die KI soll helfen, aber nicht die Arbeit abnehmen. Mögliche Formulierungen:</p>
+              <ul>
+                <li>„Nenne die Fehler, aber schreibe nicht, wie der richtige Satz lautet."</li>
+                <li>„Stelle eine Rückfrage, die die Schüler:in zum Weiterdenken anregt."</li>
+                <li>„Gib maximal einen Hinweis pro Abschnitt – kein vollständiges Feedback auf einmal."</li>
+                <li>„Wenn die Antwort vollständig richtig ist, erkläre warum – und stelle eine Vertiefungsfrage."</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Tipp: Den Dialog steuern</summary>
+            <div class="details-body">
+              <p>Ein Feedback-Assistent kann dialogisch arbeiten – er fragt nach, bevor er antwortet:</p>
+              <div class="prompt-block">
+                Bevor du Feedback gibst, frage die Schüler:in: „Was denkst du selbst – welcher Teil deiner Antwort könnte noch stärker sein?" Erst wenn sie geantwortet haben, gib dein Feedback – und beziehe ihre Selbsteinschätzung mit ein.
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Tipp: Tonalität für Schüler:innen</summary>
+            <div class="details-body">
+              <ul>
+                <li>Schreibe in direkter Ansprache: „Du hast …", nicht „Die Schüler:in hat …"</li>
+                <li>Beginne mit einer Stärke, dann der Entwicklungsmöglichkeit</li>
+                <li>Schließe mit einem konkreten nächsten Schritt: „Als nächstes könntest du …"</li>
+                <li>Passe die Sprachebene an: Klasse 5 braucht andere Formulierungen als Klasse 12</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>💡 Tipp: Scaffolding einbauen</summary>
+            <div class="details-body">
+              <p>Du kannst den Assistenten anweisen, bei Bedarf Hilfestellung in Stufen zu geben:</p>
+              <div class="prompt-block">
+                Wenn die Schüler:in nach mehr Hilfe fragt, gib zuerst einen allgemeinen Hinweis (Stufe 1). Wenn sie erneut fragt, gib einen konkreteren Tipp (Stufe 2). Erst beim dritten Nachfragen kannst du ein Beispiel zeigen – aber kein vollständiges Ergebnis.
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <label class="input-label" for="cha2-prompt" style="margin-top:1.5rem;">Dein Feedback-Systemprompt für telli:</label>
+        <textarea class="input-area" id="cha2-prompt" rows="14" data-maxlength="2000"
+          placeholder="Du bist ein lernförderlicher Feedback-Assistent für Schüler:innen der Klasse … Du hast folgende Aufgabe: … Das Lernziel ist … Dein Feedback soll … Bitte vermeide …"></textarea>
+      </div>
+
+      <!-- Reflexion -->
+      <div class="content-card content-card--cha">
+        <h3>Schritt 4: Reflexion</h3>
+
+        <label class="input-label" for="cha2-vergleich">Worin unterscheidet sich dieses Szenario von einem normalen Chatbot-Einsatz?</label>
+        <textarea class="input-area" id="cha2-vergleich" rows="3"
+          placeholder="Der Unterschied liegt darin, dass …"></textarea>
+
+        <label class="input-label" for="cha2-risiken" style="margin-top:1rem;">Welche Risiken siehst du bei diesem Einsatz?</label>
+        <textarea class="input-area" id="cha2-risiken" rows="3"
+          placeholder="z. B. Schüler:innen fragen so lange, bis die KI die Lösung preisgibt / KI gibt falsches Feedback / …"></textarea>
+
+        <label class="input-label" for="cha2-schutzmechanismen" style="margin-top:1rem;">Wie kannst du diese Risiken im Prompt oder im Unterricht abfedern?</label>
+        <textarea class="input-area" id="cha2-schutzmechanismen" rows="3"
+          placeholder="Im Prompt: … / Im Unterricht: …"></textarea>
+      </div>
+
+      <div class="task-footer-nav">
+        <a class="btn btn--outline" href="challenge-1.html">← Challenge 1</a>
+        <a class="btn btn--primary-cha" href="challenge-3.html">Weiter: Challenge 3 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Erstellt mit ❤️ und <a href="https://claude.ai/code">Claude Code</a> von Joscha Falck &nbsp;|&nbsp; <a href="../index.html">Startseite</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
