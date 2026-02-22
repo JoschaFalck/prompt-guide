@@ -1211,3 +1211,232 @@ details[open] {
   color: var(--cha-primary);
   border: 1.5px solid var(--cha-accent);
 }
+
+/* ============================================================
+   DOWNLOAD-BEREICH – Orangefarbene Palette
+   ============================================================ */
+
+:root {
+  --dl-primary:   #b7410e;   /* Rostrot */
+  --dl-secondary: #e07b39;
+  --dl-light:     #fdf0e8;
+  --dl-accent:    #f5c6a0;
+}
+
+.nav-btn--dl {
+  background: var(--dl-light);
+  color: var(--dl-primary);
+}
+.nav-btn--dl:hover {
+  background: var(--dl-accent);
+  opacity: 1;
+}
+
+.page-header--dl {
+  background: linear-gradient(135deg, var(--dl-primary) 0%, var(--dl-secondary) 100%);
+}
+
+.content-card--dl { border-top: 4px solid var(--dl-secondary); }
+
+.area-card--dl .area-card__header {
+  background: linear-gradient(135deg, var(--dl-primary), var(--dl-secondary));
+}
+.area-card--dl .area-card__list li::before { color: var(--dl-secondary); }
+
+.btn--primary-dl {
+  background: var(--dl-primary);
+  color: #fff;
+}
+.btn--primary-dl:hover { background: var(--dl-secondary); opacity: 1; }
+
+/* Download-Karten-Grid */
+.download-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+@media (max-width: 620px) {
+  .download-grid { grid-template-columns: 1fr; }
+}
+
+.download-card {
+  border: 2px solid var(--dl-accent);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s, transform 0.15s;
+  background: #fff;
+}
+.download-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.download-card__header {
+  background: linear-gradient(135deg, var(--dl-primary), var(--dl-secondary));
+  color: #fff;
+  padding: var(--space-lg);
+}
+
+.download-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.download-card__header h3 {
+  margin-bottom: var(--space-xs);
+  font-size: 1.05rem;
+}
+
+.download-card__header p {
+  font-size: 0.88rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.download-card__body {
+  padding: var(--space-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.download-card__desc {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  flex: 1;
+}
+
+.download-card__meta {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.download-card__meta span::before {
+  margin-right: 4px;
+}
+
+/* Druckbares Handout-Layout */
+.handout-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  background: #fff;
+  font-size: 0.93rem;
+}
+
+.handout-header {
+  border-bottom: 3px solid var(--dl-primary);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.handout-header h1 {
+  font-size: 1.6rem;
+  color: var(--dl-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.handout-header__meta {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.handout-section {
+  margin-bottom: var(--space-xl);
+  break-inside: avoid;
+}
+
+.handout-section h2 {
+  font-size: 1.1rem;
+  color: var(--dl-primary);
+  border-left: 4px solid var(--dl-secondary);
+  padding-left: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.handout-section h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.handout-box {
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  break-inside: avoid;
+}
+
+.handout-box--highlight {
+  background: var(--dl-light);
+  border-color: var(--dl-accent);
+}
+
+.handout-prompt {
+  background: #f4f4f8;
+  border-left: 3px solid var(--dl-secondary);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.83rem;
+  line-height: 1.6;
+  margin: var(--space-sm) 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.handout-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: var(--space-sm) 0;
+}
+.handout-table th {
+  background: var(--dl-light);
+  border: 1px solid var(--dl-accent);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  font-size: 0.82rem;
+}
+.handout-table td {
+  border: 1px solid var(--gray-200);
+  padding: 0.4rem 0.6rem;
+  vertical-align: top;
+}
+
+.handout-footer {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--gray-300);
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Print-Optimierung für Handouts */
+@media print {
+  .handout-wrapper {
+    padding: 0;
+    font-size: 10pt;
+  }
+  .handout-section { break-inside: avoid; }
+  .no-print { display: none !important; }
+  body { background: #fff; }
+  .site-nav, .site-footer { display: none; }
+}
+
+.info-box--orange {
+  background: var(--dl-light);
+  border-color: var(--dl-secondary);
+  color: var(--dl-primary);
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handout: Lösungen Challenges – Prompting im Unterricht</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="no-print" style="background: var(--dl-light); border-bottom: 2px solid var(--dl-accent); padding: 0.75rem 1.5rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+    <span style="font-size:0.9rem; color: var(--dl-primary); font-weight:600;">🖨️ Handout: Lösungen Challenges 1–4</span>
+    <button onclick="window.print()" class="btn btn--primary-dl" style="font-size:0.85rem; padding:0.35rem 0.9rem;">Als PDF speichern / Drucken</button>
+    <a href="index.html" class="btn btn--outline" style="font-size:0.85rem; padding:0.35rem 0.9rem;">← Zurück zu Downloads</a>
+  </div>
+
+  <div class="handout-wrapper">
+
+    <div class="handout-header">
+      <h1>Prompting im Unterricht – Lösungsvorschläge zu den Challenges</h1>
+      <div class="handout-header__meta">
+        <span>Für Referent:innen, Teams und zur Nachbereitung</span>
+        <span>Erstellt mit Claude Code von Joscha Falck</span>
+        <span>joschafalck.github.io/prompt-guide</span>
+      </div>
+    </div>
+
+    <div class="handout-box handout-box--highlight" style="margin-bottom:1.5rem;">
+      <strong>Hinweis:</strong> Challenges haben keine einzig richtige Lösung. Diese Seite zeigt <em>Lösungsbeispiele</em> und <em>Bewertungskriterien</em> – als Orientierung für Teamgespräche und Reflexion.
+    </div>
+
+    <!-- Challenge 1 -->
+    <div class="handout-section">
+      <h2>Challenge 1: Systemprompt für Korrekturworkflow</h2>
+      <p><em>Ziel: Einen telli-Assistenten für den Korrekturprozess von Schülerarbeiten konfigurieren</em></p>
+
+      <h3>Musterlösung: Systemprompt (Deutsch, Kl. 9, Argumentativer Aufsatz)</h3>
+      <div class="handout-prompt">Du bist ein professioneller Korrekturassistent für Lehrkräfte an einem Gymnasium. Deine Aufgabe ist es, argumentative Schüleraufsätze der 9. Klasse nach folgendem Bewertungsraster zu analysieren:
+
+• Inhalt (50 %): These vorhanden und klar, mindestens zwei belegte Argumente, schlüssige Struktur
+• Sprache (30 %): Variierter Satzbau, treffende Wortwahl, stilistische Angemessenheit
+• Form (20 %): Einleitung / Hauptteil / Schluss erkennbar, Absatzgliederung
+
+Für jede Arbeit erstellst du:
+1. Kurzzusammenfassung (2–3 Sätze)
+2. Stärken (max. 3 Stichpunkte)
+3. Verbesserungsbedarf je Kriterium (je 1–2 Sätze)
+4. Bewertungsvorschlag (Punkte je Kriterium, Gesamtpunktzahl von 20)
+5. Direktes Feedback an die Schüler:in (3 Sätze, wertschätzend, konstruktiv)
+
+Vergib keine Endnote. Weise auf Grenzfälle und Unvollständigkeiten hin. Bewerte die Arbeit, nicht die Person. Die einzureichende Schülerarbeit folgt nach dem Trennzeichen ---.</div>
+
+      <h3>Bewertungskriterien für die Challenge</h3>
+      <div class="handout-box">
+        <table class="handout-table">
+          <thead><tr><th>Kriterium</th><th>Gut</th><th>Entwicklungsbedarf</th></tr></thead>
+          <tbody>
+            <tr><td>Rollendefinition</td><td>Klar, fachspezifisch</td><td>Zu generisch ("Assistent")</td></tr>
+            <tr><td>Bewertungsraster</td><td>Im Systemprompt verankert, gewichtet</td><td>Fehlt oder zu vage</td></tr>
+            <tr><td>Ausgabeformat</td><td>Struktur klar definiert, nummeriert</td><td>Keine Formatangabe</td></tr>
+            <tr><td>Pädagog. Grenzen</td><td>Keine Note, keine Personenurteile</td><td>KI vergibt Endnoten</td></tr>
+            <tr><td>Eingabeformat</td><td>Trennzeichen definiert</td><td>Unklar, wie Arbeit eingefügt wird</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Offene Frage für die Diskussion:</strong> Welche Schülerarbeiten dürfen in ein externes KI-System hochgeladen werden? Datenschutzrechtliche Aspekte (Schulträger, DSGVO) müssen vorab geklärt sein.</p>
+    </div>
+
+    <!-- Challenge 2 -->
+    <div class="handout-section">
+      <h2>Challenge 2: Feedback-Lernszenario mit telli</h2>
+      <p><em>Ziel: KI-Assistent, der Schüler:innen lernförderliches Feedback gibt – ohne die Arbeit abzunehmen</em></p>
+
+      <h3>Musterlösung: Feedback-Systemprompt (Deutsch, Kl. 8, Argumentativer Aufsatz)</h3>
+      <div class="handout-prompt">Du bist ein lernförderlicher Schreibcoach für Schüler:innen der 8. Klasse. Deine Aufgabe ist es, konstruktives Feedback zu argumentativen Aufsätzen zu geben. Das Lernziel: Die Schüler:in kann eine eigene These mit zwei belegten Argumenten formulieren.
+
+Dein Feedback folgt immer dieser Struktur:
+1. Eine Stärke: Was ist konkret gut gelungen?
+2. Eine Frage: „Was glaubst du selbst – welcher Teil könnte noch stärker sein?"
+3. Erst nach der Antwort: Ein konkreter Hinweis zur Weiterentwicklung
+
+Schreibe keine fertigen Sätze für die Schüler:in. Nenne Fehler, aber formuliere nicht, wie der richtige Satz lautet. Wenn die Schüler:in nach mehr Hilfe fragt: Stufe 1 allgemeiner Hinweis → Stufe 2 konkreter Tipp → Stufe 3 Beispiel (nie vollständige Lösung).
+
+Sprich die Schüler:in direkt an (du). Beginne immer mit der Stärke. Vergib keine Note.</div>
+
+      <h3>Was macht diesen Systemprompt gut?</h3>
+      <div class="handout-box handout-box--highlight">
+        <ul style="padding-left:1.2rem; margin:0;">
+          <li>Gestuftes Scaffolding verhindert, dass die KI zu viel preisgibt</li>
+          <li>Dialog-Prinzip: KI fragt zuerst, bevor sie antwortet</li>
+          <li>Klare Einschränkung: keine fertigen Sätze, keine Noten</li>
+          <li>Lernziel ist im Prompt verankert → KI gibt zielgerichtetes Feedback</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Challenge 3 -->
+    <div class="handout-section">
+      <h2>Challenge 3: KI-resiliente Aufgaben entwickeln</h2>
+      <p><em>Ziel: Aufgaben, bei denen Eigenleistung trotz KI sichtbar bleibt</em></p>
+
+      <h3>Musterlösung: Prompt zur Aufgabenerstellung</h3>
+      <div class="handout-prompt">Du bist erfahrene Ethiklehrerin an einem Gymnasium. Entwickle drei KI-resiliente Aufgaben zum Thema Gerechtigkeit für Klasse 10. KI-resilient bedeutet: Die Aufgaben erfordern persönliche Erfahrung oder mündliche Beteiligung, sodass KI sie nicht allein sinnvoll lösen kann.
+
+Strategie: Persönliche Erfahrung + mündliche Komponente.
+
+Lernziel: Die Schüler:innen können Gerechtigkeitsbegriffe auf Alltagssituationen anwenden und ihre Position begründen.
+
+Für jede Aufgabe: Aufgabentext / Aufgabentyp / Warum KI-resilient / Wie Eigenleistung bewertet wird.
+
+Drei Schwierigkeitsgrade: Beschreiben (Bloom 2) / Analysieren (Bloom 4) / Bewerten (Bloom 5).</div>
+
+      <h3>Die 5 Strategien im Vergleich</h3>
+      <table class="handout-table">
+        <thead><tr><th>Strategie</th><th>Stärke</th><th>Grenze</th></tr></thead>
+        <tbody>
+          <tr><td>A – Persönliche Erfahrung</td><td>Hohe Authentizität, sehr KI-resilient</td><td>Nicht für alle Themen geeignet</td></tr>
+          <tr><td>B – Mündliche Komponente</td><td>Sehr stark: KI kann nicht sprechen</td><td>Erfordert Präsenz / Aufwand</td></tr>
+          <tr><td>C – Prozessdokumentation</td><td>Macht KI-Nutzung transparent und lernwirksam</td><td>Höherer Korrekturaufwand</td></tr>
+          <tr><td>D – Aktueller/lokaler Kontext</td><td>Authentizität, zeitliche Aktualität</td><td>Materialaufwand für Lehrkraft</td></tr>
+          <tr><td>E – Kreative Verbindung</td><td>Fördert Kreativität</td><td>KI wird bei Kreativaufgaben besser</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Challenge 4 -->
+    <div class="handout-section">
+      <h2>Challenge 4: Eigenes Lernszenario</h2>
+      <p><em>Ziel: Offenes, selbstentwickeltes KI-Lernszenario für den eigenen Unterricht</em></p>
+
+      <h3>Bewertungsraster</h3>
+      <table class="handout-table">
+        <thead>
+          <tr><th>Dimension</th><th>Stark</th><th>Ausbaufähig</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pädagogische Absicht</strong></td>
+            <td>Lernziel klar, KI unterstützt es</td>
+            <td>KI-Einsatz ohne Lernziel-Bezug</td>
+          </tr>
+          <tr>
+            <td><strong>Rolle der KI</strong></td>
+            <td>Klar definiert, pädagogisch sinnvoll</td>
+            <td>KI ersetzt Lehrkraft oder Lernenden</td>
+          </tr>
+          <tr>
+            <td><strong>Rolle der Lehrkraft</strong></td>
+            <td>Aktiv (beobachtet, moderiert, reagiert)</td>
+            <td>Passiv oder abwesend</td>
+          </tr>
+          <tr>
+            <td><strong>Eigenleistung</strong></td>
+            <td>Schüler:innen müssen denken, urteilen, produzieren</td>
+            <td>KI übernimmt Kerndenken</td>
+          </tr>
+          <tr>
+            <td><strong>Weiterarbeit</strong></td>
+            <td>KI-Ergebnis wird weiterverwendet, reflektiert</td>
+            <td>Kein Transfer, kein Anschluss</td>
+          </tr>
+          <tr>
+            <td><strong>Prompt-Qualität</strong></td>
+            <td>Alle relevanten Bausteine, klare Einschränkungen</td>
+            <td>Vage, unvollständig</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Beispiel-Szenario: KI als historische Figur (Geschichte, Kl. 10)</h3>
+      <div class="handout-prompt">Du spielst Willy Brandt am 7. Dezember 1970 – dem Tag des Kniefalls in Warschau. Antworte nur aus dieser Perspektive und diesem Wissensstand. Erkläre deine Entscheidungen und Überzeugungen. Wenn Schüler:innen nach Ereignissen nach 1970 fragen, weise darauf hin, dass du das nicht wissen kannst. Zeige auch Widersprüche und die politische Komplexität deiner Position.</div>
+
+      <div class="handout-box handout-box--highlight">
+        <strong>Warum dieses Szenario funktioniert:</strong> Schüler:innen müssen historisches Wissen aktivieren, um sinnvolle Fragen zu stellen · Die KI kann nicht einfach die „Antwort" liefern, weil die Schüler:innen die Richtung bestimmen · Die Lehrkraft moderiert und stellt Vertiefungsfragen · Das Ergebnis wird in einer Reflexion weiterverarbeitet.
+      </div>
+    </div>
+
+    <div class="handout-footer">
+      <span>Prompting im Unterricht – Lösungen Challenges 1–4</span>
+      <span>joschafalck.github.io/prompt-guide</span>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

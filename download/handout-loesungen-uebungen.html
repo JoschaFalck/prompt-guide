@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handout: Lösungen Übungen – Prompting im Unterricht</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="no-print" style="background: var(--dl-light); border-bottom: 2px solid var(--dl-accent); padding: 0.75rem 1.5rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+    <span style="font-size:0.9rem; color: var(--dl-primary); font-weight:600;">🖨️ Handout: Lösungen Übungen 1–6</span>
+    <button onclick="window.print()" class="btn btn--primary-dl" style="font-size:0.85rem; padding:0.35rem 0.9rem;">Als PDF speichern / Drucken</button>
+    <a href="index.html" class="btn btn--outline" style="font-size:0.85rem; padding:0.35rem 0.9rem;">← Zurück zu Downloads</a>
+  </div>
+
+  <div class="handout-wrapper">
+
+    <div class="handout-header">
+      <h1>Prompting im Unterricht – Lösungen zu den Übungen</h1>
+      <div class="handout-header__meta">
+        <span>Für Referent:innen und zur Nachbereitung</span>
+        <span>Erstellt mit Claude Code von Joscha Falck</span>
+        <span>joschafalck.github.io/prompt-guide</span>
+      </div>
+    </div>
+
+    <div class="handout-box handout-box--highlight" style="margin-bottom:1.5rem;">
+      <strong>Hinweis:</strong> Diese Lösungen sind Orientierungen, keine Musterlösungen im strengen Sinne. Beim Prompting gibt es viele richtige Wege – entscheidend sind die zugrunde liegenden Prinzipien, nicht eine bestimmte Formulierung.
+    </div>
+
+    <!-- Übung 1 -->
+    <div class="handout-section">
+      <h2>Übung 1: Analyse – Prompts bewerten</h2>
+      <p><em>Bloom-Stufen 2 (Verstehen) und 4 (Analysieren) · Situation: Arbeitsblatt zur Karikaturanalyse, Klasse 9</em></p>
+
+      <h3>Prompt A: „Mach mir ein Arbeitsblatt."</h3>
+      <div class="handout-box">
+        <strong>Analyse:</strong> Alle vier Kriterien nicht erfüllt. Kein Thema, keine Zielgruppe, kein Format, kein Zweck. Die KI würde ein beliebiges, generisches Arbeitsblatt erstellen – mit an Sicherheit grenzender Wahrscheinlichkeit nicht verwendbar. <strong>Fazit:</strong> Nicht einsetzbar ohne vollständige Überarbeitung.
+      </div>
+
+      <h3>Prompt B: „Erstelle ein Arbeitsblatt zur Karikaturanalyse für meine Klasse."</h3>
+      <div class="handout-box">
+        <strong>Analyse:</strong> Thema (Karikaturanalyse) ist klar – ein Fortschritt gegenüber A. Aber: Welche Klasse? Welches Vorwissen? Welches Format? Wie lang? Die KI muss viele Entscheidungen selbst treffen. Das Ergebnis könnte zufällig passen, muss aber meist stark nachbearbeitet werden. <strong>Fazit:</strong> Oft nicht direkt einsetzbar.
+      </div>
+
+      <h3>Prompt C: Der vollständige Prompt (mit allen 5 Bausteinen)</h3>
+      <div class="handout-box handout-box--highlight">
+        <strong>Analyse:</strong> Alle fünf Bausteine vorhanden. Rolle (Geschichtslehrerin) bestimmt den Stil; Aufgabe (Einführungs-Arbeitsblatt) ist klar; Kontext (9. Klasse, kein Vorwissen, 45 Minuten) gibt der KI alle nötigen Infos; Format (3 Abschnitte, A4) verhindert ein zu langes Ergebnis; Einschränkung (keine fertige Analyse) stellt den pädagogischen Anspruch sicher. <strong>Fazit:</strong> Direkt einsetzbar oder mit minimaler Nacharbeit.
+      </div>
+
+      <p><strong>Kernbotschaft für die Diskussion:</strong> Der Mehraufwand für Prompt C (ca. 3–5 Minuten gegenüber Prompt A) spart vielfache Zeit beim Nacharbeiten und liefert ein direkt verwendbares Ergebnis.</p>
+    </div>
+
+    <!-- Übung 2 -->
+    <div class="handout-section">
+      <h2>Übung 2: Rekonstruktion – Schwachen Prompt verbessern</h2>
+      <p><em>Bloom-Stufe 3 (Anwenden)</em></p>
+
+      <h3>Situation 1: Mathe-Hausaufgaben</h3>
+      <div class="handout-prompt">Du bist Mathematiklehrerin an einer Realschule. Erstelle differenzierte Hausaufgaben zum Thema lineare Funktionen. Klasse 8; die Schüler:innen können Koordinatensystem und Wertetabellen, haben aber die Steigungsformel noch nicht behandelt. Je drei Aufgaben für: Grundniveau ★ (Punkte ablesen) und erweitertes Niveau ★★ (Steigung aus zwei Punkten). Nummeriere: 1★a/b/c und 2★★a/b/c. Ausschließlich Alltagskontexte. Kein Taschenrechner nötig.</div>
+
+      <h3>Situation 2: Elternbrief Klassenfahrt</h3>
+      <div class="handout-prompt">Du bist Klassenlehrkraft der 6d an einer Gesamtschule. Schreibe einen Elternbrief zur Klassenfahrt: Ziel Jugendherberge Eifel, 4 Tage (Mo–Do), Programm: zwei Tageswanderungen, Burgbesichtigung, freie Zeit am See. Kosten: 180 €. Briefformat, Abschnitte: Begrüßung / Programm / Praktische Infos (Packliste, Kosten) / Rückmeldung. Am Ende: abtrennbares Einverständnisformular mit Elternunterschrift und Notfallkontakt. Ton wertschätzend, klar, nicht zu bürokratisch. Keine Floskeln am Anfang.</div>
+
+      <p><strong>Worauf achten:</strong> Schlüssel ist, dass die spezifischen Informationen (Programm, Kosten, Format des Formulars) explizit im Prompt stehen – die KI kann sie nicht erfinden.</p>
+    </div>
+
+    <!-- Übung 3 -->
+    <div class="handout-section">
+      <h2>Übung 3: Transfer – Eigenen Prompt schreiben</h2>
+      <p><em>Bloom-Stufe 3 (Anwenden) · Offene Aufgabe</em></p>
+
+      <div class="handout-box handout-box--highlight">
+        <strong>Bewertungskriterien (keine Musterlösung):</strong>
+        <ul style="margin-top:0.4rem; padding-left:1.2rem;">
+          <li>Ist die Aufgabe klar und mit einem konkreten Verb formuliert?</li>
+          <li>Sind Klasse, Schulform und Vorwissen angegeben?</li>
+          <li>Ist ein Format spezifiziert (Länge, Struktur, Tonalität)?</li>
+          <li>Gibt es eine sinnvolle Einschränkung?</li>
+          <li>Würde die KI aus diesem Prompt allein verstehen, was gebraucht wird?</li>
+        </ul>
+        <strong>Selbsttest:</strong> Lies den Prompt durch die Augen der KI. Was müsste sie raten?
+      </div>
+
+      <p><strong>Typische Lücken in dieser Übung:</strong> Fehlendes Vorwissen der Klasse · Kein Format angegeben · Aufgabe zu vage formuliert (z. B. „Hilf mir mit …" statt „Erstelle …")</p>
+    </div>
+
+    <!-- Übung 4 -->
+    <div class="handout-section">
+      <h2>Übung 4: Peer-Review</h2>
+      <p><em>Bloom-Stufen 4 (Analysieren) und 5 (Bewerten)</em></p>
+
+      <div class="handout-box">
+        <strong>Worauf beim Review achten:</strong>
+        <ul style="margin-top:0.4rem; padding-left:1.2rem;">
+          <li><strong>Rolle:</strong> Vorhanden und fachlich passend? Oder zu generisch?</li>
+          <li><strong>Aufgabe:</strong> Klares Verb? Eindeutig was entstehen soll?</li>
+          <li><strong>Kontext:</strong> Zielgruppe und Vorwissen konkret genug? Zeitrahmen?</li>
+          <li><strong>Format:</strong> Angegeben? Passt zum Verwendungszweck?</li>
+          <li><strong>Einschränkung:</strong> Fehlt sie? Würde sie das Ergebnis verbessern?</li>
+        </ul>
+      </div>
+
+      <p><strong>Hinweis für die Moderation:</strong> Häufiges Muster im Peer-Review – Prompts sind inhaltlich gut, aber das Format ist nicht spezifiziert. Das führt zu unerwarteten Ausgabeformaten der KI. Darauf gezielt hinweisen lassen.</p>
+    </div>
+
+    <!-- Übung 5 -->
+    <div class="handout-section">
+      <h2>Übung 5: Reflexion – KI-Einsatz pädagogisch einschätzen</h2>
+      <p><em>Bloom-Stufe 5 (Bewerten) · Keine Musterlösung – Positionierungen</em></p>
+
+      <table class="handout-table">
+        <thead>
+          <tr><th>Szenario</th><th>Tendenz</th><th>Kernargument</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 – Differenzierung automatisieren</td>
+            <td>Eher sinnvoll</td>
+            <td>Spart Zeit bei administrativer Aufgabe; pädagogische Entscheidung (Verteilung) bleibt bei Lehrkraft.</td>
+          </tr>
+          <tr>
+            <td>2 – KI schreibt Aufsatz</td>
+            <td>Problematisch</td>
+            <td>Schreib-Kompetenz als Lernziel wird umgangen; Beurteilung täuscht über tatsächlichen Lernstand hinweg.</td>
+          </tr>
+          <tr>
+            <td>3 – KI als Schreibgesprächspartner</td>
+            <td>Sinnvoll (mit Bedingungen)</td>
+            <td>Eigenformulierung bleibt bei Schüler:in; KI als Spiegel, nicht als Autor. Klare Rahmung nötig.</td>
+          </tr>
+          <tr>
+            <td>4 – KI für Verwaltungsaufgaben</td>
+            <td>Sinnvoll</td>
+            <td>Keine pädagogische Expertise nötig; Zeitgewinn kommt Schüler:innen zugute.</td>
+          </tr>
+          <tr>
+            <td>5 – KI-Erklärvideos als HA</td>
+            <td>Kommt drauf an</td>
+            <td>Qualität der KI-Erklärungen entscheidend; kein persönlicher Bezug zur Klasse; Motivation fraglich.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Leitfrage für die Diskussion:</strong> Übernimmt die KI Denkarbeit, die Schüler:innen für ihr Lernen selbst leisten müssen? Wenn ja, ist der Einsatz pädagogisch problematisch.</p>
+    </div>
+
+    <!-- Übung 6 -->
+    <div class="handout-section">
+      <h2>Übung 6: Entwicklung – Eigene Prompt-Vorlage</h2>
+      <p><em>Bloom-Stufe 6 (Erschaffen) · Weiterarbeit zuhause</em></p>
+
+      <div class="handout-box handout-box--highlight">
+        <strong>Qualitätskriterien für eine gute Vorlage:</strong>
+        <ul style="margin-top:0.4rem; padding-left:1.2rem;">
+          <li>Alle unveränderlichen Teile sind im Fließtext – alle variablen Teile als [Platzhalter]</li>
+          <li>Die Vorlage ist in 2 Minuten für ein neues Thema anpassbar</li>
+          <li>Das Format ist explizit angegeben</li>
+          <li>Die Vorlage funktioniert für mindestens 3 verschiedene Themen</li>
+          <li>Sie ist in einer Bibliothek (Dokument, Notion, telli …) abgespeichert</li>
+        </ul>
+      </div>
+
+      <div class="handout-prompt">Mustervorlage: Du bist [Rolle] an [Schulform]. Erstelle [Aufgabentyp] zum Thema [Thema] für [Klasse]. Die Schüler:innen kennen [Vorwissen], aber noch nicht [fehlendes Vorwissen]. Format: [Format, Länge, Struktur]. Verwende [Kontextvorgabe]. Bitte vermeide [Einschränkung].</div>
+    </div>
+
+    <div class="handout-footer">
+      <span>Prompting im Unterricht – Lösungen Übungen 1–6</span>
+      <span>joschafalck.github.io/prompt-guide</span>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
